@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "heap.h"
+//#include "heap.h"
+#include "graph.h"
+#include "ioHandler.h"
 
 void DijkstraHeap(FILE *entrada, FILE *saida)
 {
@@ -26,6 +28,10 @@ int main(int argc, char *argv[])
         printf("Erro ao abrir o arquivo de saída\n");
         return 1;
     }
+
+    Graph* graph = graphCreate();
+    lerArquivoEntrada(entrada, graph);
+    graphPrint(graph);
 
     DijkstraHeap(entrada, saida);
 

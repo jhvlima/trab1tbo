@@ -43,7 +43,7 @@ void graphAddAresta(Graph* graph, Aresta* aresta)
     if(aresta->src >= graph->nVertices){
         graph->nVertices = aresta->src + 1;
         graph->adjacencias = (Aresta**) realloc (graph->adjacencias, graph->nVertices * sizeof(Aresta*));
-        graph->adjacencias[graph->nVertices] = NULL;
+        graph->adjacencias[aresta->src] = NULL;
     }
 
     if(!graph->adjacencias[aresta->src]){
@@ -67,11 +67,11 @@ void graphPrint(Graph* graph)
         printf("[%d]: {", i);
         Aresta* aux = graph->adjacencias[i];
         if(aux){
-            printf("%d", aux->dst);
+            printf("%d(%.2f)", aux->dst, aux->wgh);
             aux = aux->next;
         }
         while(aux){
-            printf(", %d", aux->dst);
+            printf(", %d(%.2f)", aux->dst, aux->wgh);
             aux = aux->next;
         }
         printf("}\n");

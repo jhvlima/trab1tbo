@@ -13,6 +13,7 @@ Graph* graphCreate();
 void graphAddAresta(Graph* graph, Aresta* aresta);
 void graphSetSource(Graph* graph, int src);
 void graphPrint(Graph* graph);
+void graphDestroy(Graph* graph);
 
 
 

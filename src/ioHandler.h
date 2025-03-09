@@ -5,5 +5,6 @@
 #include <stdio.h>
 
 void lerArquivoEntrada(FILE* entrada, Graph* graph);
+void escreverArquivoSaida(FILE* saida);
 
 #endif

@@ -59,6 +59,26 @@ void graphAddAresta(Graph* graph, Aresta* aresta)
     return;
 }
 
+void arestaAdjDestroy(Aresta* aresta)
+{
+    if(aresta->next){
+        arestaAdjDestroy(aresta->next);
+    }
+    free(aresta);
+}
+
+void graphDestroy(Graph* graph)
+{
+    if (!graph) return;
+    for(int i = 0; i < graph->nVertices; i++){
+        if(graph->adjacencias[i]){
+            arestaAdjDestroy(graph->adjacencias[i]);
+        }
+    }
+    free(graph->adjacencias);
+    free(graph);
+}
+
 void graphPrint(Graph* graph)
 {
     printf("\nImprimindo Grafo:\nnVertices:%d\nSource: %d\n", graph->nVertices, graph->src);

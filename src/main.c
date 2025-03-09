@@ -32,6 +32,7 @@ int main(int argc, char *argv[])
     Graph* graph = graphCreate();
     lerArquivoEntrada(entrada, graph);
     graphPrint(graph);
+    graphDestroy(graph);
 
     DijkstraHeap(entrada, saida);
 

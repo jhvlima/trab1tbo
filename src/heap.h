@@ -10,7 +10,7 @@ void heapPush(Heap* heap, void* data);
 void* heapPop(Heap* heap);
 void* heapTop(Heap* heap);
 int heapSize(Heap* heap);
-void* heapFind(Heap* heap, int id);
+void heapAddNode(Heap* heap, Node* node);
 
 Node* nodeCreate(int id);
 int nodeGetId(Node* node);

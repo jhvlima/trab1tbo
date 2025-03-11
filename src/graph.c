@@ -36,6 +36,50 @@ void graphSetSource(Graph* graph, int src)
     graph->src = src;
 }
 
+int graphGetNVertices(Graph* graph)
+{
+    return graph->nVertices;
+}
+
+int graphGetSource(Graph* graph)
+{
+    return graph->src;
+}
+
+float getPesoAresta(Graph* graph, int o, int d)
+{
+    Aresta* aresta = graph->adjacencias[o];
+    while(aresta){
+        if(aresta->dst == d){
+            return aresta->wgh;
+        }
+        aresta = aresta->next;
+    }
+}
+
+int* graphGetAdjacencias(Graph* graph, int src, int* nAdj)
+{
+    if(!graph || !graph->adjacencias[src]) exit(EXIT_FAILURE);
+
+    Aresta* aresta = graph->adjacencias[src];
+    (*nAdj)++;
+    while(aresta->next){
+        aresta = aresta->next;
+        (*nAdj)++;
+    }
+    int* adjacencias = (int*) malloc (*nAdj * sizeof(int));
+    int i = 0;
+    aresta = graph->adjacencias[src];
+    while (aresta)
+    {
+        adjacencias[i] = aresta->dst;
+        aresta = aresta->next;
+        i++;
+    }
+    return adjacencias;    
+
+}
+
 void graphAddAresta(Graph* graph, Aresta* aresta)
 {
     if(!graph || !aresta) return;

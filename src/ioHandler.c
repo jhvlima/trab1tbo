@@ -16,8 +16,10 @@ void lerArquivoEntrada(FILE* entrada, Graph* graph)
         dst++;
     }
     while(fscanf(entrada, "%f%*c", &wgh) == 1){
-        Aresta* aresta = arestaCreate(id, dst, wgh);
-        graphAddAresta(graph, aresta);
+        if(wgh){
+            Aresta* aresta = arestaCreate(id, dst, wgh);
+            graphAddAresta(graph, aresta);
+        }
         dst++;
     }
     size = dst;
@@ -30,8 +32,10 @@ void lerArquivoEntrada(FILE* entrada, Graph* graph)
                 continue;
             }
             fscanf(entrada, "%f%*c", &wgh);
-            Aresta* aresta = arestaCreate(id, j, wgh);
-            graphAddAresta(graph, aresta);
+            if(wgh){
+                Aresta* aresta = arestaCreate(id, j, wgh);
+                graphAddAresta(graph, aresta);
+            }
         }
     }
     return;

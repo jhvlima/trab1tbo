@@ -1,41 +1,58 @@
 #include "ioHandler.h"
 
+/*
+    @brief Le arquivo de entrada para contar o numero de vertices
+    @param entrada Arquivo de entrada
+    @return Numero de vertices
+*/
 int contarVertices(FILE* entrada){
     int count = 0;
     char c;
-    fscanf(entrada, "%*[^\n]\n");
-    while(1){
-        fscanf(entrada, "%*[^,\n]%c", &c);
-        if(c == '\n'){
-            count++;
-            break;
-        }
-        else{
-            count++;
-        }
+    fscanf(entrada, "%*[^\n]\n"); //ignora primeira linha (vertice de origem)
+
+    char *linha = NULL;
+    size_t tamanho = 0;
+    if (getline(&linha, &tamanho, entrada) == -1){
+        free(linha);
+        return 0;
     }
+    char *token = strtok(linha, ",\n");
+    count++;
+
+    while (token = strtok(NULL, ",\n")){
+        count++;
+    }
+
+    free(linha);
     rewind(entrada);
-    printf("Contagem de vertices finalizada: %d\n", count);
+
+    //printf("Contagem de vertices finalizada: %d\n", count);
+
     return count;
 }
 
 void lerArquivoEntrada(FILE* entrada, Graph* graph)
 {
-    printf("Lendo arquivo de Entrada\n");
-    if(!graph || !entrada) exit(EXIT_FAILURE);
+    //printf("Lendo arquivo de Entrada\n");
+    if(!graph || !entrada){
+        printf("Erro: lerArquivoEntrada\n");
+        exit(EXIT_FAILURE);
+    }
 
     char nomeBuffer[1001], sourceName[1001];
+
     int nVertices = contarVertices(entrada);
     graphSetSize(graph, nVertices);
     
+    //Le nome do vertice fonte
     fscanf(entrada, "%[^\n]\n", sourceName);
 
     int dst = 0;
     float wgh = 0;
 
     for(int i = 0; i < nVertices; i++){
-        //printf("%d\n", i);
-        fscanf(entrada, "%[^,]%*c", nomeBuffer);
+        //Le nome do vertice, se for fonte define seu id no grafo
+        fscanf(entrada, "%[^,]%*c", nomeBuffer); 
         Vertice* vertice = verticeCreate(nomeBuffer, i);
         graphAddVertice(graph, vertice);
         if(strcmp(nomeBuffer, sourceName) == 0){
@@ -49,21 +66,24 @@ void lerArquivoEntrada(FILE* entrada, Graph* graph)
                 continue;
             }
             fscanf(entrada, "%f", &wgh);
-            fscanf(entrada, "%*[^,\n]");
-            fscanf(entrada, "%*c");        
+            fscanf(entrada, "%*[^,\n]"); //ignora bomba
+            fscanf(entrada, "%*c");      //remove ',' ou '\n'
             if(wgh){
                 Aresta* aresta = arestaCreate(i, j, wgh);
                 graphAddAresta(graph, aresta);
             }
         }
     }
-    printf("Leitura finalizada!");
+    //printf("Leitura finalizada!");
     return;
 }
 
 void lerArquivoEntradaToken(FILE* entrada, Graph* graph) {
-    printf("Lendo arquivo de Entrada\n");
-    if (!graph || !entrada) exit(EXIT_FAILURE);
+    //printf("Lendo arquivo de Entrada\n");
+    if(!graph || !entrada){
+        printf("Erro: lerArquivoEntrada\n");
+        exit(EXIT_FAILURE);
+    }
 
     char *linha = NULL;
     size_t tamanho = 0;
@@ -72,16 +92,18 @@ void lerArquivoEntradaToken(FILE* entrada, Graph* graph) {
     int nVertices = contarVertices(entrada);
     graphSetSize(graph, nVertices);
 
-    // Lendo o nome do vértice de origem
+    // Le nome do vertice fonte
     if (getline(&linha, &tamanho, entrada) == -1) {
         free(linha);
         return;
     }
     sscanf(linha, "%1000[^\n]", sourceName);
 
+    //Para cada vertice
     for (int i = 0; i < nVertices; i++) {
         if (getline(&linha, &tamanho, entrada) == -1) break;
 
+        //Le nome do vertice, se for o fonte define seu id no grafo
         char *token = strtok(linha, ",\n");
         if (!token) continue;
 
@@ -96,19 +118,23 @@ void lerArquivoEntradaToken(FILE* entrada, Graph* graph) {
             graphSetSource(graph, i);
         }
 
+        //Para cada adjacencia do vertice
         int j = 0;
         while ((token = strtok(NULL, ",\n")) && j < nVertices) {
             while (*token == ' ') token++; 
             float wgh = 0;
 
-            if (strcmp(token, "bomba") != 0) {
+            //ignora se for "bomba" ou qualquer outra palavra, mantendo wgh 0
+            if(!isalpha(token[0])) {
                 wgh = strtof(token, NULL);
             }
 
+            //aresta do vertice para ele mesmo com distancia 0
             if (i == j) {  
                 graphAddAresta(graph, arestaCreate(i, j, 0));
                 j++;
             }
+
             if (wgh > 0) {  
                 Aresta* aresta = arestaCreate(i, j, wgh);
                 graphAddAresta(graph, aresta);
@@ -119,14 +145,12 @@ void lerArquivoEntradaToken(FILE* entrada, Graph* graph) {
     }
 
     free(linha);
-    printf("Leitura finalizada!\n");
+    //printf("Leitura finalizada!\n");
 }
-
-
 
 void escreverArquivoSaida(FILE* saida, Node** arvoreMinima, Graph* graph)
 {
-    printf("Imprimindo Saidas\n");
+    //printf("Imprimindo Saidas\n");
     for(int i = 0; i < graphGetNVertices(graph); i++){
         Vertice* vertice = graphGetVertice(graph, i);
         fprintf(saida, "SHORTEST PATH TO %s: ", verticeGetName(vertice));
@@ -144,10 +168,10 @@ void escreverArquivoSaida(FILE* saida, Node** arvoreMinima, Graph* graph)
         }
         fprintf(saida, "%s (Distance: %.2f)\n", verticeGetName(vertice), nodeGetDistancia(arvoreMinima[i]));
     }
-    printf("Impressao finalizada\n");
+    //printf("Impressao finalizada\n");
 }
 
-void escreverSaidaTerminal(FILE* saida, Node** arvoreMinima, Graph* graph)
+void escreverSaidaTerminal(Node** arvoreMinima, Graph* graph)
 {
     for(int i = 0; i < graphGetNVertices(graph); i++){
         Vertice* vertice = graphGetVertice(graph, i);

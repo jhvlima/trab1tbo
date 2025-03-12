@@ -16,7 +16,7 @@ Node** dijkstraHeap(Graph* graph)
     Node** arvoreMin = (Node**) calloc (graphGetNVertices(graph), sizeof(Node*));
     int* adjacencias;
 
-    heapPrint(heap);
+    //heapPrint(heap);
 
     while(!heapIsEmpty(heap)){
         min = heapPopMin(heap);
@@ -29,7 +29,7 @@ Node** dijkstraHeap(Graph* graph)
                 relaxarAresta(heap, adjacencias[i], min, pesoAresta);
             }
         }
-        heapPrint(heap);
+        //heapPrint(heap);
         free(adjacencias);
     }
 

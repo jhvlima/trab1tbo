@@ -27,25 +27,13 @@ int main(int argc, char *argv[])
 
     Graph* graph = graphCreate();
     lerArquivoEntrada(entrada, graph);
-    graphPrint(graph);
+    //graphPrint(graph);
 
     Node** arvoreMinima = dijkstraHeap(graph);
 
-    for(int i = 0; i < graphGetNVertices(graph); i++){
-        printf("SHORTEST PATH TO node_%d: ", i);
+    escreverArquivoSaida(saida, arvoreMinima, graph);
+    escreverSaidaTerminal(saida, arvoreMinima, graph);
 
-        if(i == graphGetSource(graph)){
-            printf("node_%d <- node_%d (Distance: 0.00)\n", i, i);
-            continue;
-        }
-
-        int leitor = i;
-        while(leitor != graphGetSource(graph)){
-            printf("node_%d <- ", nodeGetId(arvoreMinima[leitor]));
-            leitor = nodeGetPai(arvoreMinima[leitor]);
-        }
-        printf("node_%d (Distance: %.2f)\n", nodeGetId(arvoreMinima[leitor]), nodeGetDistancia(arvoreMinima[i]));
-    }
     for(int i = 0; i < graphGetNVertices(graph); i++){
         free(arvoreMinima[i]);
     }

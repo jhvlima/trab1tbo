@@ -1,4 +1,6 @@
 # Ignora a pasta de casos de teste
 casos_teste_v3/
+#pasta de saidas
+saidas/
 # Daniel: to ignorando a pasta em q faco meus testes
 testes/ 

@@ -6,9 +6,16 @@ struct __aresta{
     Aresta* next; //Proxima aresta na lista de adjacencias
 };
 
+struct __vertice{
+    char* nome;
+    int id;
+    int nAdj;
+};
+
 struct __graph{
     int nVertices;
     int src;
+    Vertice** vertices;
     Aresta** adjacencias;
 };
 
@@ -22,13 +29,53 @@ Aresta* arestaCreate(int src, int dst, float wgh)
     return aresta;
 }
 
+Vertice* verticeCreate(char* nome, int id)
+{
+    Vertice* vertice = (Vertice*) calloc (1, sizeof(Vertice));
+    vertice->nome = strdup(nome);
+    vertice->id = id;
+}
+
 Graph* graphCreate(int nVertices)
 {
     Graph* graph = (Graph*) calloc (sizeof(Graph), 1);
     graph->nVertices = 0;
     graph->src = -1;
+    graph->vertices = NULL;
     graph->adjacencias = NULL;
     return graph;
+}
+
+void graphSetSize(Graph* graph, int size)
+{
+    if(!graph) return;
+
+    graph->nVertices = size;  
+    graph->adjacencias = (Aresta**) calloc (graph->nVertices, sizeof(Aresta*));
+    graph->vertices = (Vertice**) calloc (graph->nVertices, sizeof(Vertice*));
+
+}
+
+char* verticeGetName(Vertice* vertice)
+{
+    return vertice->nome;
+}
+
+void verticeDestroy(Vertice* vertice)
+{
+    free(vertice->nome);
+    free(vertice);
+}
+
+Vertice* graphGetVertice(Graph* graph, int id)
+{
+    return graph->vertices[id];
+}
+
+void graphAddVertice(Graph* graph, Vertice* vertice)
+{
+    if(!graph || !vertice || !graph->vertices) return;
+    graph->vertices[vertice->id] = vertice;
 }
 
 void graphSetSource(Graph* graph, int src)
@@ -67,7 +114,7 @@ int* graphGetAdjacencias(Graph* graph, int src, int* nAdj)
         aresta = aresta->next;
         (*nAdj)++;
     }
-    int* adjacencias = (int*) malloc (*nAdj * sizeof(int));
+    int* adjacencias = (int*) calloc (*nAdj, sizeof(int));
     int i = 0;
     aresta = graph->adjacencias[src];
     while (aresta)
@@ -82,13 +129,7 @@ int* graphGetAdjacencias(Graph* graph, int src, int* nAdj)
 
 void graphAddAresta(Graph* graph, Aresta* aresta)
 {
-    if(!graph || !aresta) return;
-
-    if(aresta->src >= graph->nVertices){
-        graph->nVertices = aresta->src + 1;
-        graph->adjacencias = (Aresta**) realloc (graph->adjacencias, graph->nVertices * sizeof(Aresta*));
-        graph->adjacencias[aresta->src] = NULL;
-    }
+    if(!graph || !aresta || !graph->adjacencias) return;
 
     if(!graph->adjacencias[aresta->src]){
         graph->adjacencias[aresta->src] = aresta;
@@ -118,8 +159,12 @@ void graphDestroy(Graph* graph)
         if(graph->adjacencias[i]){
             arestaAdjDestroy(graph->adjacencias[i]);
         }
+        if(graph->vertices[i]){
+            verticeDestroy(graph->vertices[i]);
+        }
     }
     free(graph->adjacencias);
+    free(graph->vertices);
     free(graph);
 }
 

@@ -11,13 +11,16 @@ void relaxarAresta(Heap* heap, int dest, Node* pai, float pesoAresta)
 
 Node** dijkstraHeap(Graph* graph)
 {
+    printf("Criando Heap\n");
     Heap* heap = heapCreate(graphGetNVertices(graph), graphGetSource(graph));
+    printf("Pronto!\n");
     Node* min;
     Node** arvoreMin = (Node**) calloc (graphGetNVertices(graph), sizeof(Node*));
     int* adjacencias;
 
     //heapPrint(heap);
 
+    printf("Rodando algoritmo...\n");
     while(!heapIsEmpty(heap)){
         min = heapPopMin(heap);
         arvoreMin[nodeGetId(min)] = min;
@@ -32,6 +35,7 @@ Node** dijkstraHeap(Graph* graph)
         //heapPrint(heap);
         free(adjacencias);
     }
+    printf("Pronto!\n");
 
     heapDestroy(heap);
     return arvoreMin;

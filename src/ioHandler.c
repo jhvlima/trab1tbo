@@ -1,94 +1,106 @@
 #include "ioHandler.h"
 
+int contarVertices(FILE* entrada){
+    int count = 0;
+    char c;
+    fscanf(entrada, "%*[^\n]\n");
+    while(1){
+        fscanf(entrada, "%*[^,\n]%c", &c);
+        if(c == '\n'){
+            count++;
+            break;
+        }
+        else{
+            count++;
+        }
+    }
+    rewind(entrada);
+    printf("Contagem de vertices finalizada: %d\n", count);
+    return count;
+}
+
 void lerArquivoEntrada(FILE* entrada, Graph* graph)
 {
+    printf("Lendo arquivo de Entrada\n");
     if(!graph || !entrada) exit(EXIT_FAILURE);
 
-    int id = 0;
-    fscanf(entrada, "%*[^0-9]%d\n", &id);
-    graphSetSource(graph, id);
+    char nomeBuffer[1001], sourceName[1001];
+    int nVertices = contarVertices(entrada);
+    graphSetSize(graph, nVertices);
+    
+    fscanf(entrada, "%[^\n]\n", sourceName);
 
-    int dst = 0, size = 0;
+    int dst = 0;
     float wgh = 0;
-    fscanf(entrada, "%*[^0-9]%d%*c", &id);
-    if(id == dst){
-        graphAddAresta(graph, arestaCreate(id, dst, 0)); //Adiciona aresta 0-> 0
-        dst++;
-    }
-    while(1){
-        if(fscanf(entrada, "%f%*c", &wgh) != 1){
-            char c;
-            fscanf(entrada,"%c", &c);
-            if (c == 'b'){
-                fscanf(entrada, "%*[^\n ]%*c");
-                wgh = 0;
-            }
-            else{
-                break;
-            }
-        }
-        if(wgh){
-            Aresta* aresta = arestaCreate(id, dst, wgh);
-            graphAddAresta(graph, aresta);
-        }
-        dst++;
-    }
-    size = dst;
 
-    for(int i = 1; i < size; i++){
-        fscanf(entrada, "%*[^0-9]%d%*c", &id);
-        for(int j = 0; j < size; j++){
-            if(id == j){
-                graphAddAresta(graph, arestaCreate(id, j, 0));
+    for(int i = 0; i < nVertices; i++){
+        printf("%d\n", i);
+        fscanf(entrada, "%[^,]%*c", nomeBuffer);
+        Vertice* vertice = verticeCreate(nomeBuffer, i);
+        graphAddVertice(graph, vertice);
+        if(strcmp(nomeBuffer, sourceName) == 0){
+            graphSetSource(graph, i);
+        }
+
+        for(int j = 0; j < nVertices; j++){
+            wgh = 0;
+            if(i == j){
+                graphAddAresta(graph, arestaCreate(i, j, wgh));
                 continue;
             }
-            if(fscanf(entrada, "%f%*c", &wgh) != 1){
-                fscanf(entrada, "%*[^\n ]%*c");
-                wgh = 0;
-            }        
+            fscanf(entrada, "%f", &wgh);
+            fscanf(entrada, "%*[^,\n]");
+            fscanf(entrada, "%*c");        
             if(wgh){
-                Aresta* aresta = arestaCreate(id, j, wgh);
+                Aresta* aresta = arestaCreate(i, j, wgh);
                 graphAddAresta(graph, aresta);
             }
         }
     }
+    printf("Leitura finalizada!");
     return;
 }
 
 void escreverArquivoSaida(FILE* saida, Node** arvoreMinima, Graph* graph)
 {
+    printf("Imprimindo Saidas\n");
     for(int i = 0; i < graphGetNVertices(graph); i++){
-        fprintf(saida, "SHORTEST PATH TO node_%d: ", i);
+        Vertice* vertice = graphGetVertice(graph, i);
+        fprintf(saida, "SHORTEST PATH TO %s: ", verticeGetName(vertice));
 
         if(i == graphGetSource(graph)){
-            fprintf(saida, "node_%d <- node_%d (Distance: 0.00)\n", i, i);
+            fprintf(saida, "%s <- %s (Distance: 0.00)\n", verticeGetName(vertice), verticeGetName(vertice));
             continue;
         }
 
         int leitor = i;
         while(leitor != graphGetSource(graph)){
-            fprintf(saida, "node_%d <- ", nodeGetId(arvoreMinima[leitor]));
+            fprintf(saida, "%s <- ", verticeGetName(vertice));
             leitor = nodeGetPai(arvoreMinima[leitor]);
+            vertice = graphGetVertice(graph, nodeGetId(arvoreMinima[leitor]));
         }
-        fprintf(saida, "node_%d (Distance: %.2f)\n", nodeGetId(arvoreMinima[leitor]), nodeGetDistancia(arvoreMinima[i]));
+        fprintf(saida, "%s (Distance: %.2f)\n", verticeGetName(vertice), nodeGetDistancia(arvoreMinima[i]));
     }
+    printf("Impressao finalizada\n");
 }
 
 void escreverSaidaTerminal(FILE* saida, Node** arvoreMinima, Graph* graph)
 {
     for(int i = 0; i < graphGetNVertices(graph); i++){
-        printf("SHORTEST PATH TO node_%d: ", i);
+        Vertice* vertice = graphGetVertice(graph, i);
+        printf("SHORTEST PATH TO %s: ", verticeGetName(vertice));
 
         if(i == graphGetSource(graph)){
-            printf("node_%d <- node_%d (Distance: 0.00)\n", i, i);
+            printf("%s <- %s (Distance: 0.00)\n", verticeGetName(vertice), verticeGetName(vertice));
             continue;
         }
 
         int leitor = i;
         while(leitor != graphGetSource(graph)){
-            printf("node_%d <- ", nodeGetId(arvoreMinima[leitor]));
+            printf("%s <- ", verticeGetName(vertice));
             leitor = nodeGetPai(arvoreMinima[leitor]);
+            vertice = graphGetVertice(graph, nodeGetId(arvoreMinima[leitor]));
         }
-        printf("node_%d (Distance: %.2f)\n", nodeGetId(arvoreMinima[leitor]), nodeGetDistancia(arvoreMinima[i]));
+        printf("%s (Distance: %.2f)\n", verticeGetName(vertice), nodeGetDistancia(arvoreMinima[i]));
     }
 }

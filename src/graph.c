@@ -136,11 +136,8 @@ void graphAddAresta(Graph* graph, Aresta* aresta)
         return;
     }
 
-    Aresta* aux = graph->adjacencias[aresta->src];
-    while(aux->next){
-        aux = aux->next;
-    }
-    aux->next = aresta;
+    aresta->next = graph->adjacencias[aresta->src];
+    graph->adjacencias[aresta->src] = aresta;
     return;
 }
 

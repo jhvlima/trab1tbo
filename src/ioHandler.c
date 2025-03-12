@@ -24,39 +24,80 @@ void lerArquivoEntrada(FILE* entrada, Graph* graph)
     printf("Lendo arquivo de Entrada\n");
     if(!graph || !entrada) exit(EXIT_FAILURE);
 
+    char *linha = NULL;
+    size_t tamanho = 0;
     char nomeBuffer[1001], sourceName[1001];
     int nVertices = contarVertices(entrada);
     graphSetSize(graph, nVertices);
-    
-    fscanf(entrada, "%[^\n]\n", sourceName);
+
+    if (getline(&linha, &tamanho, entrada) == -1) {
+        free(linha);
+        return;
+    }
+    sscanf(linha, "%1000[^\n]%*c", sourceName);
 
     int dst = 0;
     float wgh = 0;
 
     for(int i = 0; i < nVertices; i++){
-        printf("%d\n", i);
-        fscanf(entrada, "%[^,]%*c", nomeBuffer);
+        //printf("%d\n", i);
+
+        if (getline(&linha, &tamanho, entrada) == -1) break;
+        char* token = strtok(linha, ",\n");  // Primeiro token é o nome do nó
+        if (!token) continue;
+
+        //printf("%s", linha);
+        //if(i == 2) break;
+        
+        // fscanf(entrada, "%[^,]%*c", nomeBuffer);
+        
+        strncpy(nomeBuffer, token, 1000);
+
         Vertice* vertice = verticeCreate(nomeBuffer, i);
         graphAddVertice(graph, vertice);
         if(strcmp(nomeBuffer, sourceName) == 0){
             graphSetSource(graph, i);
         }
 
-        for(int j = 0; j < nVertices; j++){
-            wgh = 0;
-            if(i == j){
+        int j = 0;
+        while ((token = strtok(NULL, ",\n")) && j < nVertices) {
+            float wgh = 0;
+            if (i == j) {
+                j++;
                 graphAddAresta(graph, arestaCreate(i, j, wgh));
                 continue;
+            } 
+            if (strcmp(token, "bomba") != 0) {
+                wgh = strtof(token, NULL);
             }
-            fscanf(entrada, "%f", &wgh);
-            fscanf(entrada, "%*[^,\n]");
-            fscanf(entrada, "%*c");        
+            //printf("%.2f ", wgh);
+
             if(wgh){
                 Aresta* aresta = arestaCreate(i, j, wgh);
                 graphAddAresta(graph, aresta);
             }
+            j++;
         }
+
+        // for(int j = 0; j < nVertices; j++){
+        //     wgh = 0;
+        //     if(i == j){
+        //         graphAddAresta(graph, arestaCreate(i, j, wgh));
+        //         continue;
+        //     }
+        //     // fscanf(entrada, "%f", &wgh);
+        //     // fscanf(entrada, "%*[^,\n]");
+        //     // fscanf(entrada, "%*c");  
+        //     sscanf(linha, "%f", &wgh);
+        //     sscanf(linha, "%*[^,\n]");
+        //     sscanf(linha, "%*c");  
+        //     if(wgh){
+        //         Aresta* aresta = arestaCreate(i, j, wgh);
+        //         graphAddAresta(graph, aresta);
+        //     }
+        // }
     }
+    free(linha);
     printf("Leitura finalizada!");
     return;
 }

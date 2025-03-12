@@ -14,6 +14,7 @@ struct __heap
     int tamanho;
     int capacidade;
     Node** nodes;
+    int* posicaoId;
 
     int (*compare)(void*, void*);
 };
@@ -53,9 +54,15 @@ int greater(Node* n1, Node* n2)
 
 void exch(Heap* heap, int k1, int k2)
 {
+    int id1 = nodeGetId(heap->nodes[k1]);
+    int id2 = nodeGetId(heap->nodes[k2]);
+
     Node* aux = heap->nodes[k1];
     heap->nodes[k1] = heap->nodes[k2];
     heap->nodes[k2] = aux;
+    
+    heap->posicaoId[id1] = k2;
+    heap->posicaoId[id2] = k1;
 }
 
 void heapFixUp(Heap* heap, int k)
@@ -115,15 +122,12 @@ float heapGetDistancia(Heap* heap, int id)
 
 int heapSearchId(Heap* heap, int id)
 {
-    if(id > heap->capacidade){
-        return 0;
+    if(!heap || id > heap->capacidade - 1){
+        printf("\nErro heapSearchId\n");     
+        exit(EXIT_FAILURE);
+
     }
-    for(int i = 1; i <= heap->tamanho; i++){
-        if(nodeGetId(heap->nodes[i]) == id){
-            return i;
-        }
-    }
-    return 0;
+    return heap->posicaoId[id];
 }
 
 void heapAddNode(Heap* heap, Node* node)
@@ -132,6 +136,7 @@ void heapAddNode(Heap* heap, Node* node)
 
     heap->tamanho++;
     heap->nodes[heap->tamanho] = node;
+    heap->posicaoId[node->idVert] = heap->tamanho;
     heapFixUp(heap, (heap->tamanho));
 }
 
@@ -141,6 +146,7 @@ Heap* heapCreate(int nVertices, int source)
     Heap* heap = (Heap*) calloc (1, sizeof(Heap));
     heap->tamanho = 0;
     heap->capacidade = nVertices + 1;
+    heap->posicaoId = (int*) malloc (nVertices * sizeof(int));
     heap->nodes = (Node**) calloc ((nVertices+1),  sizeof(Node*)); //(nVertices+1) pois indices comecam em 1
     for (int i = 0; i < nVertices; i++){
         Node* node = nodeCreate(i, -1);
@@ -155,6 +161,7 @@ Heap* heapCreate(int nVertices, int source)
 void heapDestroy(Heap* heap)
 {
     if(!heap) return;
+    free(heap->posicaoId);
     free(heap->nodes);
     free(heap);
 }

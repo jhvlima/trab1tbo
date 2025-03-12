@@ -37,7 +37,8 @@ int main(int argc, char *argv[])
     }
 
     Graph* graph = graphCreate();
-    lerArquivoEntrada(entrada, graph);
+    //lerArquivoEntrada(entrada, graph);
+    lerArquivoEntradaToken(entrada, graph);
     //graphPrint(graph);
     
     Node** arvoreMinima = dijkstraHeap(graph);

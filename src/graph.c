@@ -21,7 +21,7 @@ struct __graph{
 
 Aresta* arestaCreate(int src, int dst, float wgh)
 {
-    Aresta* aresta = (Aresta*) calloc (sizeof(Aresta), 1);
+    Aresta* aresta = (Aresta*) malloc (sizeof(Aresta));
     aresta->src = src;
     aresta->dst = dst;
     aresta->wgh = wgh;
@@ -29,11 +29,17 @@ Aresta* arestaCreate(int src, int dst, float wgh)
     return aresta;
 }
 
+int arestaGetDst(Aresta* aresta)
+{
+    return aresta->dst;
+}
+
 Vertice* verticeCreate(char* nome, int id)
 {
-    Vertice* vertice = (Vertice*) calloc (1, sizeof(Vertice));
+    Vertice* vertice = (Vertice*) malloc (sizeof(Vertice));
     vertice->nome = strdup(nome);
     vertice->id = id;
+    vertice->nAdj = 0;
 }
 
 Graph* graphCreate(int nVertices)
@@ -93,37 +99,22 @@ int graphGetSource(Graph* graph)
     return graph->src;
 }
 
-float getPesoAresta(Graph* graph, int o, int d)
+float arestaGetPeso(Aresta* aresta)
 {
-    Aresta* aresta = graph->adjacencias[o];
-    while(aresta){
-        if(aresta->dst == d){
-            return aresta->wgh;
-        }
-        aresta = aresta->next;
-    }
+    if(!aresta) exit(EXIT_FAILURE);
+    return aresta->wgh;
 }
 
-int* graphGetAdjacencias(Graph* graph, int src, int* nAdj)
+Aresta* arestaGetNext(Aresta* aresta)
 {
-    if(!graph || !graph->adjacencias[src]) exit(EXIT_FAILURE);
+    return aresta->next;
+}
 
-    Aresta* aresta = graph->adjacencias[src];
-    (*nAdj)++;
-    while(aresta->next){
-        aresta = aresta->next;
-        (*nAdj)++;
-    }
-    int* adjacencias = (int*) calloc (*nAdj, sizeof(int));
-    int i = 0;
-    aresta = graph->adjacencias[src];
-    while (aresta)
-    {
-        adjacencias[i] = aresta->dst;
-        aresta = aresta->next;
-        i++;
-    }
-    return adjacencias;    
+Aresta* graphGetAdjacencias(Graph* graph, int id)
+{
+    if(!graph) exit(EXIT_FAILURE);
+
+    return graph->adjacencias[id];    
 
 }
 

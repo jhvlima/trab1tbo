@@ -8,6 +8,7 @@
 #include <stdio.h>
 
 void lerArquivoEntrada(FILE* entrada, Graph* graph);
+void lerArquivoEntradaToken(FILE* entrada, Graph* graph);
 void escreverArquivoSaida(FILE* saida, Node** arvoreMinima, Graph* graph);
 void escreverSaidaTerminal(FILE* saida, Node** arvoreMinima, Graph* graph);
 

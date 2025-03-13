@@ -31,7 +31,7 @@ int contarVertices(FILE* entrada){
     return count;
 }
 
-void lerArquivoEntrada(FILE* entrada, Graph* graph)
+void lerArquivoEntradaGraph(FILE* entrada, Graph* graph)
 {
     //printf("Lendo arquivo de Entrada\n");
     if(!graph || !entrada){
@@ -78,7 +78,7 @@ void lerArquivoEntrada(FILE* entrada, Graph* graph)
     return;
 }
 
-void lerArquivoEntradaToken(FILE* entrada, Graph* graph) {
+void lerArquivoEntradaGraphToken(FILE* entrada, Graph* graph) {
     //printf("Lendo arquivo de Entrada\n");
     if(!graph || !entrada){
         printf("Erro: lerArquivoEntrada\n");
@@ -148,7 +148,80 @@ void lerArquivoEntradaToken(FILE* entrada, Graph* graph) {
     //printf("Leitura finalizada!\n");
 }
 
-void escreverArquivoSaida(FILE* saida, Node** arvoreMinima, Graph* graph)
+void lerArquivoEntradaMatrixToken(FILE* entrada, Matrix* matrix)
+{
+    //printf("Lendo arquivo de Entrada\n");
+    if(!matrix || !entrada){
+        printf("Erro: lerArquivoEntrada\n");
+        exit(EXIT_FAILURE);
+    }
+
+    char *linha = NULL;
+    size_t tamanho = 0;
+    char nomeBuffer[1001], sourceName[1001];
+
+    int nVertices = contarVertices(entrada);
+    matrixSetSize(matrix, nVertices);
+
+    // Le nome do vertice fonte
+    if (getline(&linha, &tamanho, entrada) == -1) {
+        free(linha);
+        return;
+    }
+    sscanf(linha, "%1000[^\n]", sourceName);
+
+    //Para cada vertice
+    for (int i = 0; i < nVertices; i++) {
+        if (getline(&linha, &tamanho, entrada) == -1) break;
+
+        //Le nome do vertice, se for o fonte define seu id no grafo
+        char *token = strtok(linha, ",\n");
+        if (!token) continue;
+
+        while (*token == ' ') token++;
+        strncpy(nomeBuffer, token, 1000);
+        nomeBuffer[1000] = '\0'; 
+
+        matrixAddName(matrix, nomeBuffer, i);
+
+        if (strcmp(nomeBuffer, sourceName) == 0) {
+            matrixSetSource(matrix, i);
+        }
+
+        //Para cada adjacencia do vertice
+        int j = 0;
+        while ((token = strtok(NULL, ",\n")) && j < nVertices) {
+            while (*token == ' ') token++; 
+            float wgh = 0;
+
+            //ignora se for "bomba" ou qualquer outra palavra, mantendo wgh 0
+            if(!isalpha(token[0])) {
+                wgh = strtof(token, NULL);
+            }
+
+            //aresta do vertice para ele mesmo com distancia 0
+            if (i == j) {  
+                matrixSetValue(matrix, i, j, 0);
+                j++;
+            }
+
+            if (wgh > 0) {  
+                matrixSetValue(matrix, i, j, wgh);
+            }
+
+            else if (wgh == 0){
+                matrixSetValue(matrix, i, j, -1);
+            }
+
+            j++;
+        }
+    }
+
+    free(linha);
+    //printf("Leitura finalizada!\n");
+}
+
+void escreverArquivoSaidaGraph(FILE* saida, Node** arvoreMinima, Graph* graph)
 {
     //printf("Imprimindo Saidas\n");
     for(int i = 0; i < graphGetNVertices(graph); i++){
@@ -171,7 +244,7 @@ void escreverArquivoSaida(FILE* saida, Node** arvoreMinima, Graph* graph)
     //printf("Impressao finalizada\n");
 }
 
-void escreverSaidaTerminal(Node** arvoreMinima, Graph* graph)
+void escreverSaidaTerminalGraph(Node** arvoreMinima, Graph* graph)
 {
     for(int i = 0; i < graphGetNVertices(graph); i++){
         Vertice* vertice = graphGetVertice(graph, i);

@@ -2,13 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct __node
-{
-    int idVert;
-    float distancia;
-    int pai;
-};
-
 struct __heap
 {
     int tamanho;
@@ -17,36 +10,18 @@ struct __heap
     int* posicaoId;
 };
 
-Node* nodeCreate(int idVert, float distancia)
-{
-    Node* node = (Node*) malloc (sizeof(Node));
-    node->distancia = distancia;
-    node->idVert = idVert;
-    node->pai = idVert;
-    return node;
-}
-
-int nodeGetId(Node* node)
-{
-    return node->idVert;
-}
-
-float nodeGetDistancia(Node* node)
-{
-    return node->distancia;
-}
 
 //FUNCOES AUXILIARES DE MANUTENCAO DA HEAP
 
 int greater(Node* n1, Node* n2) //1: n1>n2; 0: n1<n2
 {
-    if(n2->distancia < 0){
+    if(nodeGetDistancia(n2) < 0){
         return 0;
     }
-    if(n1->distancia < 0){
+    if(nodeGetDistancia(n1) < 0){
         return 1;
     }
-    if(n1->distancia > n2->distancia){
+    if(nodeGetDistancia(n1) > nodeGetDistancia(n2)){
         return 1;
     }
     return 0;
@@ -102,7 +77,7 @@ Heap* heapCreate(int nVertices, int source)
     for (int i = 0; i < nVertices; i++){
         Node* node = nodeCreate(i, -1);
         if(source == i){
-            node->distancia = 0;
+            nodeSetDistancia(node, 0);
         }
         heapAddNode(heap, node);
     }
@@ -117,7 +92,7 @@ void heapAddNode(Heap* heap, Node* node)
 
     heap->tamanho++;
     heap->nodes[heap->tamanho] = node;
-    heap->posicaoId[node->idVert] = heap->tamanho;
+    heap->posicaoId[nodeGetId(node)] = heap->tamanho;
     heapFixUp(heap, (heap->tamanho));
 }
 
@@ -138,14 +113,9 @@ Node* heapPopMin(Heap* heap) {
 void heapAtualizaDistancia(Heap* heap, int pos, float distancia, int pai)
 {
     Node* node = heap->nodes[pos];
-    node->distancia = distancia;
-    node->pai = pai;
+    nodeSetDistancia(node, distancia);
+    nodeSetPai(node, pai);
     heapFixUp(heap, pos);
-}
-
-int nodeGetPai(Node* node)
-{
-    return node->pai;
 }
 
 float heapGetDistancia(Heap* heap, int id)
@@ -186,6 +156,6 @@ void heapPrint(Heap* heap)
     printf("\nImprimindo Heap Binaria - sz(%d/%d):\n", heap->tamanho, heap->capacidade);
     printf("ID_NODE_HEAP: (ID_VERTICE//ID_VERTICE_PAI)<--[DISTANCIA]--(ID_PAI_HEAP)");
     for(int i = 1; i <= heap->tamanho; i++){
-        printf("%d:(%d//%d)<--[%.2f]--(%d)\n", i, nodeGetId(heap->nodes[i]), nodeGetId(heap->nodes[pai(i)]), heap->nodes[i]->distancia, heap->nodes[i]->pai);
+        printf("%d:(%d//%d)<--[%.2f]--(%d)\n", i, nodeGetId(heap->nodes[i]), nodeGetId(heap->nodes[pai(i)]), nodeGetDistancia(heap->nodes[i]), nodeGetPai(heap->nodes[i]));
     }
 }

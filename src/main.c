@@ -32,15 +32,16 @@ int main(int argc, char *argv[])
 
     Graph* graph = graphCreate();
 
-    //lerArquivoEntrada(entrada, graph);
-    lerArquivoEntradaToken(entrada, graph);
+    //Escolha entre ler com fscanf ou com getLine(e Token)
+    //lerArquivoEntradaGraph(entrada, graph);
+    lerArquivoEntradaGraphToken(entrada, graph);
 
     //graphPrint(graph);
     
     Node** arvoreMinima = dijkstraHeap(graph);
 
-    escreverArquivoSaida(saida, arvoreMinima, graph);
-    //escreverSaidaTerminal(arvoreMinima, graph);
+    escreverArquivoSaidaGraph(saida, arvoreMinima, graph);
+    //escreverSaidaTerminalGraph(arvoreMinima, graph);
 
     if(arvoreMinima){
         for(int i = 0; i < graphGetNVertices(graph); i++){

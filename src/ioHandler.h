@@ -2,6 +2,7 @@
 #define IOHANDLER_H
 
 #include "graph.h"
+#include "matrix.h"
 #include "heap.h"
 #include <string.h>
 #include <stdlib.h>
@@ -15,7 +16,7 @@
     @param graph Grafo
     @return
 */
-void lerArquivoEntrada(FILE* entrada, Graph* graph);
+void lerArquivoEntradaGraph(FILE* entrada, Graph* graph);
 
 /*
     @brief Le arquivo de entrada usando getLine (menos acessos a disco) e atribui informacoes ao grafo
@@ -23,7 +24,23 @@ void lerArquivoEntrada(FILE* entrada, Graph* graph);
     @param graph Grafo
     @return
 */
-void lerArquivoEntradaToken(FILE* entrada, Graph* graph);
+void lerArquivoEntradaGraphToken(FILE* entrada, Graph* graph);
+
+/*
+    @brief Le arquivo de entrada usando fscanf e atribui informacoes a matriz de adjacencias
+    @param entrada Arquivo de entrada
+    @param matrix Matriz
+    @return
+*/
+void lerArquivoEntradaMatrix(FILE* entrada, Matrix* matrix);
+
+/*
+    @brief Le arquivo de entrada usando getLine (menos acessos a disco) e atribui informacoes a matriz de adjacencias
+    @param entrada Arquivo de entrada
+    @param matrix Matriz
+    @return
+*/
+void lerArquivoEntradaMatrixToken(FILE* entrada, Matrix* matrix);
 
 //SAIDA --------------------------------
 /*
@@ -33,7 +50,7 @@ void lerArquivoEntradaToken(FILE* entrada, Graph* graph);
     @param graph Grafo
     @return
 */
-void escreverArquivoSaida(FILE* saida, Node** arvoreMinima, Graph* graph);
+void escreverArquivoSaidaGraph(FILE* saida, Node** arvoreMinima, Graph* graph);
 
 /*
     @brief Imprime caminhos minimos no terminal
@@ -42,6 +59,24 @@ void escreverArquivoSaida(FILE* saida, Node** arvoreMinima, Graph* graph);
     @param graph Grafo
     @return
 */
-void escreverSaidaTerminal(Node** arvoreMinima, Graph* graph);
+void escreverSaidaTerminalGraph(Node** arvoreMinima, Graph* graph);
+
+/*
+    @brief Imprime caminhos minimos no arquivo de saida
+    @param saida Arquivo de saida
+    @param arvoreMinima Vetor de arvores minimas
+    @param graph Matriz
+    @return
+*/
+void escreverArquivoSaidaMatrix(FILE* saida, Node** arvoreMinima, Matrix* matrix);
+
+/*
+    @brief Imprime caminhos minimos no terminal
+    @param saida Arquivo de saida
+    @param arvoreMinima Vetor de arvores minimas
+    @param matrix Matriz
+    @return
+*/
+void escreverSaidaTerminalMatrix(Node** arvoreMinima, Matrix* matrix);
 
 #endif

@@ -51,3 +51,40 @@ Node** dijkstraHeap(Graph* graph)
     heapDestroy(heap);
     return arvoreMin;
 }
+
+int resolveComDijkstraHeap(char* entradaPath, char* saidaPath)
+{
+    FILE *entrada = fopen(entradaPath, "r");
+    if (entrada == NULL)
+    {
+        printf("Erro ao abrir o arquivo de entrada: %s\n", entradaPath);
+        return 1;
+    }
+
+    FILE *saida = fopen(saidaPath, "w");
+    if (saida == NULL)
+    {
+        printf("Erro ao abrir o arquivo de saída\n");
+        return 1;
+    }
+
+    Graph* graph = graphCreate();
+
+    //Escolha entre ler com fscanf ou com getLine(e Token)
+    //lerArquivoEntradaGraph(entrada, graph);
+    lerArquivoEntradaGraphToken(entrada, graph);
+
+    //graphPrint(graph);
+    
+    Node** arvoreMinima = dijkstraHeap(graph);
+
+    escreverArquivoSaidaGraph(saida, arvoreMinima, graph);
+    //escreverSaidaTerminalGraph(arvoreMinima, graph);
+
+    nodeDestroyArvoreMinima(arvoreMinima, graphGetNVertices(graph));
+    
+    graphDestroy(graph);
+
+    fclose(entrada);
+    fclose(saida);
+}

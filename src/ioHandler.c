@@ -176,7 +176,10 @@ void lerArquivoEntradaMatrixToken(FILE* entrada, Matrix* matrix)
 
         //Le nome do vertice, se for o fonte define seu id no grafo
         char *token = strtok(linha, ",\n");
-        if (!token) continue;
+        if (!token){
+            printf("\n!token\n");
+            continue;
+        } 
 
         while (*token == ' ') token++;
         strncpy(nomeBuffer, token, 1000);
@@ -212,7 +215,6 @@ void lerArquivoEntradaMatrixToken(FILE* entrada, Matrix* matrix)
             else if (wgh == 0){
                 matrixSetValue(matrix, i, j, -1);
             }
-
             j++;
         }
     }
@@ -262,5 +264,43 @@ void escreverSaidaTerminalGraph(Node** arvoreMinima, Graph* graph)
             vertice = graphGetVertice(graph, nodeGetId(arvoreMinima[leitor]));
         }
         printf("%s (Distance: %.2f)\n", verticeGetName(vertice), nodeGetDistancia(arvoreMinima[i]));
+    }
+}
+
+void escreverArquivoSaidaMatrix(FILE* saida, Node** arvoreMinima, Matrix* matrix)
+{
+    for(int i = 0; i < matrixGetSize(matrix); i++){
+        fprintf(saida, "SHORTEST PATH TO %s: ", matrixGetNomeVertice(matrix, i));
+
+        if(i == matrixGetSource(matrix)){
+            fprintf(saida, "%s <- %s (Distance: 0.00)\n", matrixGetNomeVertice(matrix, i), matrixGetNomeVertice(matrix, i));
+            continue;
+        }
+
+        int leitor = i;
+        while(leitor != matrixGetSource(matrix)){
+            fprintf(saida, "%s <- ", matrixGetNomeVertice(matrix, leitor));
+            leitor = nodeGetPai(arvoreMinima[leitor]);
+        }
+        fprintf(saida, "%s (Distance: %.2f)\n", matrixGetNomeVertice(matrix, leitor), nodeGetDistancia(arvoreMinima[i]));
+    }
+}
+
+void escreverSaidaTerminalMatrix(Node** arvoreMinima, Matrix* matrix)
+{
+    for(int i = 0; i < matrixGetSize(matrix); i++){
+        printf("SHORTEST PATH TO %s: ", matrixGetNomeVertice(matrix, i));
+
+        if(i == matrixGetSource(matrix)){
+            printf("%s <- %s (Distance: 0.00)\n", matrixGetNomeVertice(matrix, i), matrixGetNomeVertice(matrix, i));
+            continue;
+        }
+
+        int leitor = i;
+        while(leitor != matrixGetSource(matrix)){
+            printf("%s <- ", matrixGetNomeVertice(matrix, leitor));
+            leitor = nodeGetPai(arvoreMinima[leitor]);
+        }
+        printf("%s (Distance: %.2f)\n", matrixGetNomeVertice(matrix, leitor), nodeGetDistancia(arvoreMinima[i]));
     }
 }

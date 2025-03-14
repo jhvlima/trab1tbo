@@ -45,3 +45,13 @@ void nodeSetPai(Node* node, int pai)
     node->pai = pai;
 }
 
+void nodeDestroyArvoreMinima(Node** arvoreMinima, int nVertices)
+{
+    if(arvoreMinima){
+        for(int i = 0; i < nVertices; i++){
+            if(arvoreMinima[i]) free(arvoreMinima[i]);
+        }
+        free(arvoreMinima);
+    }
+}
+

@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include "heap.h"
 #include "graph.h"
+#include "ioHandler.h"
 
 /*
     @brief Realiza o algoritmo de Dijkstra em um grafo, utilizando uma MinHeap
@@ -12,5 +13,7 @@
     @return Caminhos minimos
 */
 Node** dijkstraHeap(Graph* graph);
+
+int resolveComDijkstraHeap(char* entradaPath, char* saidaPath);
 
 #endif

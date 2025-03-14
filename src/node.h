@@ -49,4 +49,12 @@ void nodeSetDistancia(Node* node, int distancia);
 */
 void nodeSetPai(Node* node, int pai);
 
+/*
+    @brief Desaloca arvore minima (vetor de nodes)
+    @param arvoreMinima Arvores Minimas;
+    @param nVertices Numero de vertices
+    @return
+*/
+void nodeDestroyArvoreMinima(Node** arvoreMinima, int nVertices);
+
 #endif

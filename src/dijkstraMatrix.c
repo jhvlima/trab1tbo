@@ -117,5 +117,5 @@ int resolveComDijkstraMatrix(char* entradaPath, char* saidaPath)
 
     fclose(entrada);
     fclose(saida);
-
+    return 0;
 }

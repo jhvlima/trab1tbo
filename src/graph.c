@@ -65,6 +65,7 @@ Vertice* verticeCreate(char* nome, int id)
     vertice->nome = strdup(nome); //aloca dinamicamente espaco para o nome e o copia
     vertice->id = id;
     vertice->nAdj = 0;
+    return vertice;
 }
 
 char* verticeGetName(Vertice* vertice)

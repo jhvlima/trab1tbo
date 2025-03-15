@@ -2,15 +2,26 @@
 #define DIJKSTRAMATRIX_H
 
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
-
-#include "matrix.h"
+#include <string.h>
 #include "node.h"
+#include "matrix.h"
+#include "graph.h"
 #include "ioHandler.h"
 
+/*
+    @brief Realiza o algoritmo de Dijkstra em uma matriz de adjacências
+    @param matrix Matriz de adjacências
+    @return Caminhos mínimos
+*/
 Node** dijkstraMatrix(Matrix* matrix);
 
+/*
+    @brief Resolve o problema utilizando o algoritmo de Dijkstra com matriz de adjacências
+    @param entradaPath Caminho para o arquivo de entrada
+    @param saidaPath Caminho para o arquivo de saída
+    @return Status da execução
+*/
 int resolveComDijkstraMatrix(char* entradaPath, char* saidaPath);
 
 #endif

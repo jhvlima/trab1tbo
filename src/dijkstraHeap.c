@@ -25,7 +25,6 @@ Node** dijkstraHeap(Graph* graph)
 
     Node* min;
     Node** arvoreMin = (Node**) calloc (graphGetNVertices(graph), sizeof(Node*));
-    Aresta* adjacencias;
 
     //heapPrint(heap);
     //printf("Rodando algoritmo...\n");
@@ -87,4 +86,5 @@ int resolveComDijkstraHeap(char* entradaPath, char* saidaPath)
 
     fclose(entrada);
     fclose(saida);
+    return 0;
 }

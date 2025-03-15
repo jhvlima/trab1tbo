@@ -1,5 +1,5 @@
 #include "ioHandler.h"
-
+#include "matrix.h"
 /*
     @brief Le arquivo de entrada para contar o numero de vertices
     @param entrada Arquivo de entrada
@@ -7,7 +7,6 @@
 */
 int contarVertices(FILE* entrada){
     int count = 0;
-    char c;
     fscanf(entrada, "%*[^\n]\n"); //ignora primeira linha (vertice de origem)
 
     char *linha = NULL;
@@ -47,7 +46,6 @@ void lerArquivoEntradaGraph(FILE* entrada, Graph* graph)
     //Le nome do vertice fonte
     fscanf(entrada, "%[^\n]\n", sourceName);
 
-    int dst = 0;
     float wgh = 0;
 
     for(int i = 0; i < nVertices; i++){

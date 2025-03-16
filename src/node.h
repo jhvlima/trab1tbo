@@ -39,7 +39,7 @@ int nodeGetId(Node* node);
     @param distancia Distancia
     @return 
 */
-void nodeSetDistancia(Node* node, int distancia);
+void nodeSetDistancia(Node* node, float distancia);
 
 /*
     @brief Define vertice pai do node

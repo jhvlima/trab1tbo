@@ -1,0 +1,952 @@
+Comparando saidas/saida_heapcaso_teste_medio_1.txt com saidas/saida_matrixcaso_teste_medio_1.txt
+596c596
+< SHORTEST PATH TO node_4992: node_4992 <- node_4157 <- node_1511 <- node_3116 <- node_512 <- node_4044 (Distance: 22.40)
+---
+> SHORTEST PATH TO node_4992: node_4992 <- node_1734 <- node_395 <- node_2687 <- node_4044 (Distance: 22.40)
+661c661
+< SHORTEST PATH TO node_221: node_221 <- node_4624 <- node_39 <- node_2549 <- node_2566 <- node_4453 <- node_512 <- node_4044 (Distance: 23.20)
+---
+> SHORTEST PATH TO node_221: node_221 <- node_1499 <- node_4453 <- node_512 <- node_4044 (Distance: 23.20)
+1219c1219
+< SHORTEST PATH TO node_204: node_204 <- node_4992 <- node_4157 <- node_1511 <- node_3116 <- node_512 <- node_4044 (Distance: 25.60)
+---
+> SHORTEST PATH TO node_204: node_204 <- node_4992 <- node_1734 <- node_395 <- node_2687 <- node_4044 (Distance: 25.60)
+1278c1278
+< SHORTEST PATH TO node_3131: node_3131 <- node_4213 <- node_4179 <- node_1528 <- node_4782 <- node_512 <- node_4044 (Distance: 25.60)
+---
+> SHORTEST PATH TO node_3131: node_3131 <- node_652 <- node_2368 <- node_3886 <- node_4044 (Distance: 25.60)
+1388c1388
+< SHORTEST PATH TO node_799: node_799 <- node_1597 <- node_2549 <- node_2566 <- node_4453 <- node_512 <- node_4044 (Distance: 26.40)
+---
+> SHORTEST PATH TO node_799: node_799 <- node_847 <- node_39 <- node_2549 <- node_2566 <- node_4453 <- node_512 <- node_4044 (Distance: 26.40)
+1483c1483
+< SHORTEST PATH TO node_3511: node_3511 <- node_4459 <- node_2383 <- node_1576 <- node_217 <- node_2712 <- node_4453 <- node_512 <- node_4044 (Distance: 26.40)
+---
+> SHORTEST PATH TO node_3511: node_3511 <- node_1845 <- node_4170 <- node_2476 <- node_217 <- node_2712 <- node_4453 <- node_512 <- node_4044 (Distance: 26.40)
+1530c1530
+< SHORTEST PATH TO node_4517: node_4517 <- node_4870 <- node_262 <- node_1622 <- node_389 <- node_4453 <- node_512 <- node_4044 (Distance: 26.40)
+---
+> SHORTEST PATH TO node_4517: node_4517 <- node_1964 <- node_2154 <- node_520 <- node_1288 <- node_2251 <- node_4453 <- node_512 <- node_4044 (Distance: 26.40)
+1588c1588
+< SHORTEST PATH TO node_687: node_687 <- node_1602 <- node_1821 <- node_262 <- node_1622 <- node_389 <- node_4453 <- node_512 <- node_4044 (Distance: 26.40)
+---
+> SHORTEST PATH TO node_687: node_687 <- node_946 <- node_4355 <- node_2182 <- node_3713 <- node_4453 <- node_512 <- node_4044 (Distance: 26.40)
+1672c1672
+< SHORTEST PATH TO node_2317: node_2317 <- node_3273 <- node_4483 <- node_2965 <- node_3713 <- node_4453 <- node_512 <- node_4044 (Distance: 26.40)
+---
+> SHORTEST PATH TO node_2317: node_2317 <- node_238 <- node_4157 <- node_1511 <- node_3116 <- node_512 <- node_4044 (Distance: 26.40)
+1713c1713
+< SHORTEST PATH TO node_3008: node_3008 <- node_4559 <- node_3602 <- node_2430 <- node_4453 <- node_512 <- node_4044 (Distance: 26.40)
+---
+> SHORTEST PATH TO node_3008: node_3008 <- node_1337 <- node_4588 <- node_1576 <- node_217 <- node_2712 <- node_4453 <- node_512 <- node_4044 (Distance: 26.40)
+2361c2361
+< SHORTEST PATH TO node_2794: node_2794 <- node_2328 <- node_126 <- node_4794 <- node_2687 <- node_4044 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_2794: node_2794 <- node_652 <- node_2368 <- node_3886 <- node_4044 (Distance: 28.80)
+2392c2392
+< SHORTEST PATH TO node_3394: node_3394 <- node_4272 <- node_3423 <- node_395 <- node_2687 <- node_4044 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_3394: node_3394 <- node_1742 <- node_2957 <- node_512 <- node_4044 (Distance: 28.80)
+2484c2484
+< SHORTEST PATH TO node_269: node_269 <- node_4901 <- node_1852 <- node_544 <- node_395 <- node_2687 <- node_4044 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_269: node_269 <- node_2812 <- node_2498 <- node_383 <- node_1231 <- node_3116 <- node_512 <- node_4044 (Distance: 28.80)
+2524c2524
+< SHORTEST PATH TO node_3389: node_3389 <- node_204 <- node_4992 <- node_4157 <- node_1511 <- node_3116 <- node_512 <- node_4044 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_3389: node_3389 <- node_204 <- node_4992 <- node_1734 <- node_395 <- node_2687 <- node_4044 (Distance: 28.80)
+2537c2537
+< SHORTEST PATH TO node_4174: node_4174 <- node_1771 <- node_3530 <- node_2629 <- node_1231 <- node_3116 <- node_512 <- node_4044 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_4174: node_4174 <- node_248 <- node_188 <- node_3590 <- node_2945 <- node_4044 (Distance: 28.80)
+2713c2713
+< SHORTEST PATH TO node_944: node_944 <- node_2621 <- node_2104 <- node_2416 <- node_3267 <- node_4650 <- node_512 <- node_4044 (Distance: 29.60)
+---
+> SHORTEST PATH TO node_944: node_944 <- node_850 <- node_2549 <- node_2566 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+2743c2743
+< SHORTEST PATH TO node_1336: node_1336 <- node_4694 <- node_2965 <- node_3713 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+---
+> SHORTEST PATH TO node_1336: node_1336 <- node_1240 <- node_851 <- node_2566 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+2747c2747
+< SHORTEST PATH TO node_1404: node_1404 <- node_1601 <- node_3107 <- node_2683 <- node_520 <- node_1288 <- node_2251 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+---
+> SHORTEST PATH TO node_1404: node_1404 <- node_832 <- node_4829 <- node_3267 <- node_4650 <- node_512 <- node_4044 (Distance: 29.60)
+2817c2817
+< SHORTEST PATH TO node_2364: node_2364 <- node_4018 <- node_2406 <- node_2202 <- node_2712 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+---
+> SHORTEST PATH TO node_2364: node_2364 <- node_1008 <- node_662 <- node_2571 <- node_1622 <- node_389 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+2851c2851
+< SHORTEST PATH TO node_2770: node_2770 <- node_3511 <- node_4459 <- node_2383 <- node_1576 <- node_217 <- node_2712 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+---
+> SHORTEST PATH TO node_2770: node_2770 <- node_3511 <- node_1845 <- node_4170 <- node_2476 <- node_217 <- node_2712 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+2870c2870
+< SHORTEST PATH TO node_2958: node_2958 <- node_4517 <- node_4870 <- node_262 <- node_1622 <- node_389 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+---
+> SHORTEST PATH TO node_2958: node_2958 <- node_4517 <- node_1964 <- node_2154 <- node_520 <- node_1288 <- node_2251 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+2876c2876
+< SHORTEST PATH TO node_3029: node_3029 <- node_4541 <- node_2877 <- node_1242 <- node_2549 <- node_2566 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+---
+> SHORTEST PATH TO node_3029: node_3029 <- node_2269 <- node_2877 <- node_1242 <- node_2549 <- node_2566 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+2887c2887
+< SHORTEST PATH TO node_3237: node_3237 <- node_4391 <- node_1152 <- node_2251 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+---
+> SHORTEST PATH TO node_3237: node_3237 <- node_3308 <- node_1617 <- node_1242 <- node_2549 <- node_2566 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+3093c3093
+< SHORTEST PATH TO node_1519: node_1519 <- node_687 <- node_1602 <- node_1821 <- node_262 <- node_1622 <- node_389 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+---
+> SHORTEST PATH TO node_1519: node_1519 <- node_687 <- node_946 <- node_4355 <- node_2182 <- node_3713 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+3152c3152
+< SHORTEST PATH TO node_3106: node_3106 <- node_2090 <- node_4768 <- node_2865 <- node_1016 <- node_2251 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+---
+> SHORTEST PATH TO node_3106: node_3106 <- node_1297 <- node_2455 <- node_1288 <- node_2251 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+3212c3212
+< SHORTEST PATH TO node_4587: node_4587 <- node_687 <- node_1602 <- node_1821 <- node_262 <- node_1622 <- node_389 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+---
+> SHORTEST PATH TO node_4587: node_4587 <- node_687 <- node_946 <- node_4355 <- node_2182 <- node_3713 <- node_4453 <- node_512 <- node_4044 (Distance: 29.60)
+3541c3541
+< SHORTEST PATH TO node_3575: node_3575 <- node_1942 <- node_4032 <- node_1288 <- node_2251 <- node_4453 <- node_512 <- node_4044 (Distance: 31.20)
+---
+> SHORTEST PATH TO node_3575: node_3575 <- node_728 <- node_4670 <- node_2251 <- node_4453 <- node_512 <- node_4044 (Distance: 31.20)
+3663c3663
+< SHORTEST PATH TO node_551: node_551 <- node_4959 <- node_3656 <- node_4794 <- node_2687 <- node_4044 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_551: node_551 <- node_1933 <- node_3350 <- node_3116 <- node_512 <- node_4044 (Distance: 32.00)
+3730c3730
+< SHORTEST PATH TO node_2053: node_2053 <- node_3217 <- node_3794 <- node_580 <- node_395 <- node_2687 <- node_4044 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_2053: node_2053 <- node_2017 <- node_4277 <- node_3267 <- node_4650 <- node_512 <- node_4044 (Distance: 32.00)
+3776c3776
+< SHORTEST PATH TO node_2944: node_2944 <- node_4890 <- node_2800 <- node_473 <- node_236 <- node_512 <- node_4044 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_2944: node_2944 <- node_582 <- node_3742 <- node_2407 <- node_4782 <- node_512 <- node_4044 (Distance: 32.00)
+3836c3836
+< SHORTEST PATH TO node_4295: node_4295 <- node_2836 <- node_2966 <- node_4782 <- node_512 <- node_4044 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_4295: node_4295 <- node_309 <- node_1001 <- node_1164 <- node_2566 <- node_4453 <- node_512 <- node_4044 (Distance: 32.00)
+3853c3853
+< SHORTEST PATH TO node_4696: node_4696 <- node_4996 <- node_4512 <- node_3666 <- node_395 <- node_2687 <- node_4044 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_4696: node_4696 <- node_499 <- node_1937 <- node_512 <- node_4044 (Distance: 32.00)
+3864c3864
+< SHORTEST PATH TO node_87: node_87 <- node_204 <- node_4992 <- node_4157 <- node_1511 <- node_3116 <- node_512 <- node_4044 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_87: node_87 <- node_204 <- node_4992 <- node_1734 <- node_395 <- node_2687 <- node_4044 (Distance: 32.00)
+3881c3881
+< SHORTEST PATH TO node_1693: node_1693 <- node_3389 <- node_204 <- node_4992 <- node_4157 <- node_1511 <- node_3116 <- node_512 <- node_4044 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_1693: node_1693 <- node_3389 <- node_204 <- node_4992 <- node_1734 <- node_395 <- node_2687 <- node_4044 (Distance: 32.00)
+3912,3913c3912,3913
+< SHORTEST PATH TO node_4523: node_4523 <- node_4528 <- node_953 <- node_2923 <- node_2407 <- node_4782 <- node_512 <- node_4044 (Distance: 32.00)
+< SHORTEST PATH TO node_4641: node_4641 <- node_269 <- node_4901 <- node_1852 <- node_544 <- node_395 <- node_2687 <- node_4044 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_4523: node_4523 <- node_693 <- node_1196 <- node_1800 <- node_3766 <- node_2311 <- node_4044 (Distance: 32.00)
+> SHORTEST PATH TO node_4641: node_4641 <- node_269 <- node_2812 <- node_2498 <- node_383 <- node_1231 <- node_3116 <- node_512 <- node_4044 (Distance: 32.00)
+3937c3937
+< SHORTEST PATH TO node_432: node_432 <- node_87 <- node_204 <- node_4992 <- node_4157 <- node_1511 <- node_3116 <- node_512 <- node_4044 (Distance: 32.40)
+---
+> SHORTEST PATH TO node_432: node_432 <- node_87 <- node_204 <- node_4992 <- node_1734 <- node_395 <- node_2687 <- node_4044 (Distance: 32.40)
+4029c4029
+< SHORTEST PATH TO node_1851: node_1851 <- node_2518 <- node_4086 <- node_774 <- node_1203 <- node_3713 <- node_4453 <- node_512 <- node_4044 (Distance: 32.80)
+---
+> SHORTEST PATH TO node_1851: node_1851 <- node_727 <- node_4354 <- node_4432 <- node_2 <- node_2566 <- node_4453 <- node_512 <- node_4044 (Distance: 32.80)
+4068c4068
+< SHORTEST PATH TO node_2705: node_2705 <- node_3029 <- node_4541 <- node_2877 <- node_1242 <- node_2549 <- node_2566 <- node_4453 <- node_512 <- node_4044 (Distance: 32.80)
+---
+> SHORTEST PATH TO node_2705: node_2705 <- node_3029 <- node_2269 <- node_2877 <- node_1242 <- node_2549 <- node_2566 <- node_4453 <- node_512 <- node_4044 (Distance: 32.80)
+4092c4092
+< SHORTEST PATH TO node_3373: node_3373 <- node_4251 <- node_1154 <- node_775 <- node_2383 <- node_1576 <- node_217 <- node_2712 <- node_4453 <- node_512 <- node_4044 (Distance: 32.80)
+---
+> SHORTEST PATH TO node_3373: node_3373 <- node_705 <- node_1723 <- node_1301 <- node_1203 <- node_3713 <- node_4453 <- node_512 <- node_4044 (Distance: 32.80)
+4275c4275
+< SHORTEST PATH TO node_2860: node_2860 <- node_1444 <- node_1343 <- node_541 <- node_2795 <- node_2195 <- node_1203 <- node_3713 <- node_4453 <- node_512 <- node_4044 (Distance: 32.80)
+---
+> SHORTEST PATH TO node_2860: node_2860 <- node_308 <- node_4001 <- node_2416 <- node_3267 <- node_4650 <- node_512 <- node_4044 (Distance: 32.80)
+4291c4291
+< SHORTEST PATH TO node_3266: node_3266 <- node_4454 <- node_4759 <- node_1152 <- node_2251 <- node_4453 <- node_512 <- node_4044 (Distance: 32.80)
+---
+> SHORTEST PATH TO node_3266: node_3266 <- node_71 <- node_2417 <- node_2712 <- node_4453 <- node_512 <- node_4044 (Distance: 32.80)
+4576c4576
+< SHORTEST PATH TO node_1183: node_1183 <- node_3394 <- node_4272 <- node_3423 <- node_395 <- node_2687 <- node_4044 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_1183: node_1183 <- node_3394 <- node_1742 <- node_2957 <- node_512 <- node_4044 (Distance: 35.20)
+4620c4620
+< SHORTEST PATH TO node_2917: node_2917 <- node_4806 <- node_3497 <- node_1558 <- node_395 <- node_2687 <- node_4044 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_2917: node_2917 <- node_4321 <- node_2400 <- node_4677 <- node_4870 <- node_262 <- node_1622 <- node_389 <- node_4453 <- node_512 <- node_4044 (Distance: 35.20)
+4623c4623
+< SHORTEST PATH TO node_3132: node_3132 <- node_2944 <- node_4890 <- node_2800 <- node_473 <- node_236 <- node_512 <- node_4044 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_3132: node_3132 <- node_2944 <- node_582 <- node_3742 <- node_2407 <- node_4782 <- node_512 <- node_4044 (Distance: 35.20)
+4669c4669
+< SHORTEST PATH TO node_2577: node_2577 <- node_4523 <- node_4528 <- node_953 <- node_2923 <- node_2407 <- node_4782 <- node_512 <- node_4044 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_2577: node_2577 <- node_4523 <- node_693 <- node_1196 <- node_1800 <- node_3766 <- node_2311 <- node_4044 (Distance: 35.20)
+4788,4789c4788,4789
+< SHORTEST PATH TO node_4033: node_4033 <- node_221 <- node_4624 <- node_39 <- node_2549 <- node_2566 <- node_4453 <- node_512 <- node_4044 (Distance: 36.00)
+< SHORTEST PATH TO node_4082: node_4082 <- node_4395 <- node_439 <- node_1334 <- node_2251 <- node_4453 <- node_512 <- node_4044 (Distance: 36.00)
+---
+> SHORTEST PATH TO node_4033: node_4033 <- node_221 <- node_1499 <- node_4453 <- node_512 <- node_4044 (Distance: 36.00)
+> SHORTEST PATH TO node_4082: node_4082 <- node_3463 <- node_3280 <- node_1233 <- node_3255 <- node_4918 <- node_217 <- node_2712 <- node_4453 <- node_512 <- node_4044 (Distance: 36.00)
+4945c4945
+< SHORTEST PATH TO node_2731: node_2731 <- node_3373 <- node_4251 <- node_1154 <- node_775 <- node_2383 <- node_1576 <- node_217 <- node_2712 <- node_4453 <- node_512 <- node_4044 (Distance: 39.20)
+---
+> SHORTEST PATH TO node_2731: node_2731 <- node_3373 <- node_705 <- node_1723 <- node_1301 <- node_1203 <- node_3713 <- node_4453 <- node_512 <- node_4044 (Distance: 39.20)
+4958c4958
+< SHORTEST PATH TO node_4307: node_4307 <- node_4336 <- node_1166 <- node_4813 <- node_501 <- node_3155 <- node_2302 <- node_3713 <- node_4453 <- node_512 <- node_4044 (Distance: 39.20)
+---
+> SHORTEST PATH TO node_4307: node_4307 <- node_334 <- node_3898 <- node_2480 <- node_389 <- node_4453 <- node_512 <- node_4044 (Distance: 39.20)
+Comparando saidas/saida_heapcaso_teste_medio_2.txt com saidas/saida_matrixcaso_teste_medio_2.txt
+1637c1637
+< SHORTEST PATH TO node_1265: node_1265 <- node_4326 <- node_3738 <- node_1669 <- node_1875 <- node_2706 <- node_3139 (Distance: 25.60)
+---
+> SHORTEST PATH TO node_1265: node_1265 <- node_3540 <- node_4177 <- node_1129 <- node_4564 <- node_3139 (Distance: 25.60)
+1853c1853
+< SHORTEST PATH TO node_4075: node_4075 <- node_4350 <- node_1574 <- node_1458 <- node_1086 <- node_4740 <- node_2706 <- node_3139 (Distance: 25.60)
+---
+> SHORTEST PATH TO node_4075: node_4075 <- node_1726 <- node_1486 <- node_307 <- node_3734 <- node_2755 <- node_4564 <- node_3139 (Distance: 25.60)
+1947c1947
+< SHORTEST PATH TO node_174: node_174 <- node_2635 <- node_695 <- node_2265 <- node_2575 <- node_1129 <- node_4564 <- node_3139 (Distance: 25.60)
+---
+> SHORTEST PATH TO node_174: node_174 <- node_866 <- node_0 <- node_125 <- node_1165 <- node_1129 <- node_4564 <- node_3139 (Distance: 25.60)
+1978c1978
+< SHORTEST PATH TO node_627: node_627 <- node_2427 <- node_3354 <- node_1260 <- node_795 <- node_1165 <- node_1129 <- node_4564 <- node_3139 (Distance: 25.60)
+---
+> SHORTEST PATH TO node_627: node_627 <- node_1749 <- node_76 <- node_3139 (Distance: 25.60)
+2001c2001
+< SHORTEST PATH TO node_1038: node_1038 <- node_4196 <- node_573 <- node_3400 <- node_4861 <- node_1129 <- node_4564 <- node_3139 (Distance: 25.60)
+---
+> SHORTEST PATH TO node_1038: node_1038 <- node_694 <- node_1439 <- node_157 <- node_1669 <- node_1875 <- node_2706 <- node_3139 (Distance: 25.60)
+2005c2005
+< SHORTEST PATH TO node_1073: node_1073 <- node_2229 <- node_379 <- node_4785 <- node_1900 <- node_3139 (Distance: 25.60)
+---
+> SHORTEST PATH TO node_1073: node_1073 <- node_492 <- node_1641 <- node_1027 <- node_2706 <- node_3139 (Distance: 25.60)
+2015c2015
+< SHORTEST PATH TO node_1294: node_1294 <- node_3018 <- node_4915 <- node_3759 <- node_4740 <- node_2706 <- node_3139 (Distance: 25.60)
+---
+> SHORTEST PATH TO node_1294: node_1294 <- node_866 <- node_0 <- node_125 <- node_1165 <- node_1129 <- node_4564 <- node_3139 (Distance: 25.60)
+2132c2132
+< SHORTEST PATH TO node_3584: node_3584 <- node_2229 <- node_379 <- node_4785 <- node_1900 <- node_3139 (Distance: 25.60)
+---
+> SHORTEST PATH TO node_3584: node_3584 <- node_410 <- node_2396 <- node_2755 <- node_4564 <- node_3139 (Distance: 25.60)
+2172c2172
+< SHORTEST PATH TO node_4503: node_4503 <- node_4782 <- node_3817 <- node_3202 <- node_3900 <- node_3511 <- node_2755 <- node_4564 <- node_3139 (Distance: 25.60)
+---
+> SHORTEST PATH TO node_4503: node_4503 <- node_1262 <- node_2684 <- node_4240 <- node_4861 <- node_1129 <- node_4564 <- node_3139 (Distance: 25.60)
+3096c3096
+< SHORTEST PATH TO node_339: node_339 <- node_4452 <- node_3380 <- node_4785 <- node_1900 <- node_3139 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_339: node_339 <- node_4013 <- node_3400 <- node_4861 <- node_1129 <- node_4564 <- node_3139 (Distance: 28.80)
+3154c3154
+< SHORTEST PATH TO node_1123: node_1123 <- node_4593 <- node_2657 <- node_1692 <- node_3658 <- node_2396 <- node_2755 <- node_4564 <- node_3139 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_1123: node_1123 <- node_3860 <- node_4785 <- node_1900 <- node_3139 (Distance: 28.80)
+3190c3190
+< SHORTEST PATH TO node_1455: node_1455 <- node_4863 <- node_1686 <- node_1495 <- node_2258 <- node_2755 <- node_4564 <- node_3139 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_1455: node_1455 <- node_658 <- node_1086 <- node_4740 <- node_2706 <- node_3139 (Distance: 28.80)
+3236c3236
+< SHORTEST PATH TO node_1917: node_1917 <- node_1194 <- node_1615 <- node_2560 <- node_1088 <- node_877 <- node_985 <- node_4564 <- node_3139 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_1917: node_1917 <- node_476 <- node_848 <- node_4273 <- node_941 <- node_4740 <- node_2706 <- node_3139 (Distance: 28.80)
+3315c3315
+< SHORTEST PATH TO node_2916: node_2916 <- node_4133 <- node_1416 <- node_4444 <- node_4177 <- node_1129 <- node_4564 <- node_3139 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_2916: node_2916 <- node_3753 <- node_388 <- node_2214 <- node_3738 <- node_1669 <- node_1875 <- node_2706 <- node_3139 (Distance: 28.80)
+3467c3467
+< SHORTEST PATH TO node_4802: node_4802 <- node_1265 <- node_4326 <- node_3738 <- node_1669 <- node_1875 <- node_2706 <- node_3139 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_4802: node_4802 <- node_1265 <- node_3540 <- node_4177 <- node_1129 <- node_4564 <- node_3139 (Distance: 28.80)
+3479c3479
+< SHORTEST PATH TO node_4922: node_4922 <- node_4782 <- node_3817 <- node_3202 <- node_3900 <- node_3511 <- node_2755 <- node_4564 <- node_3139 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_4922: node_4922 <- node_3700 <- node_3950 <- node_1495 <- node_2258 <- node_2755 <- node_4564 <- node_3139 (Distance: 28.80)
+3552c3552
+< SHORTEST PATH TO node_3007: node_3007 <- node_4503 <- node_4782 <- node_3817 <- node_3202 <- node_3900 <- node_3511 <- node_2755 <- node_4564 <- node_3139 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_3007: node_3007 <- node_4503 <- node_1262 <- node_2684 <- node_4240 <- node_4861 <- node_1129 <- node_4564 <- node_3139 (Distance: 28.80)
+3561c3561
+< SHORTEST PATH TO node_3566: node_3566 <- node_1294 <- node_3018 <- node_4915 <- node_3759 <- node_4740 <- node_2706 <- node_3139 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_3566: node_3566 <- node_1294 <- node_866 <- node_0 <- node_125 <- node_1165 <- node_1129 <- node_4564 <- node_3139 (Distance: 28.80)
+3574c3574
+< SHORTEST PATH TO node_4497: node_4497 <- node_305 <- node_1661 <- node_2247 <- node_1335 <- node_2198 <- node_4564 <- node_3139 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_4497: node_4497 <- node_109 <- node_254 <- node_651 <- node_2519 <- node_3759 <- node_4740 <- node_2706 <- node_3139 (Distance: 28.80)
+3845c3845
+< SHORTEST PATH TO node_2830: node_2830 <- node_4152 <- node_2722 <- node_3734 <- node_2755 <- node_4564 <- node_3139 (Distance: 30.40)
+---
+> SHORTEST PATH TO node_2830: node_2830 <- node_3624 <- node_4121 <- node_4740 <- node_2706 <- node_3139 (Distance: 30.40)
+4151c4151
+< SHORTEST PATH TO node_24: node_24 <- node_1455 <- node_4863 <- node_1686 <- node_1495 <- node_2258 <- node_2755 <- node_4564 <- node_3139 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_24: node_24 <- node_1455 <- node_658 <- node_1086 <- node_4740 <- node_2706 <- node_3139 (Distance: 32.00)
+4251c4251
+< SHORTEST PATH TO node_1649: node_1649 <- node_2300 <- node_1968 <- node_2258 <- node_2755 <- node_4564 <- node_3139 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_1649: node_1649 <- node_377 <- node_2523 <- node_2706 <- node_3139 (Distance: 32.00)
+4356c4356
+< SHORTEST PATH TO node_3023: node_3023 <- node_4922 <- node_4782 <- node_3817 <- node_3202 <- node_3900 <- node_3511 <- node_2755 <- node_4564 <- node_3139 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_3023: node_3023 <- node_4922 <- node_3700 <- node_3950 <- node_1495 <- node_2258 <- node_2755 <- node_4564 <- node_3139 (Distance: 32.00)
+4365c4365
+< SHORTEST PATH TO node_3099: node_3099 <- node_1123 <- node_4593 <- node_2657 <- node_1692 <- node_3658 <- node_2396 <- node_2755 <- node_4564 <- node_3139 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_3099: node_3099 <- node_1123 <- node_3860 <- node_4785 <- node_1900 <- node_3139 (Distance: 32.00)
+4375c4375
+< SHORTEST PATH TO node_3267: node_3267 <- node_4802 <- node_1265 <- node_4326 <- node_3738 <- node_1669 <- node_1875 <- node_2706 <- node_3139 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_3267: node_3267 <- node_4802 <- node_1265 <- node_3540 <- node_4177 <- node_1129 <- node_4564 <- node_3139 (Distance: 32.00)
+4394c4394
+< SHORTEST PATH TO node_3486: node_3486 <- node_4394 <- node_457 <- node_990 <- node_2706 <- node_3139 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_3486: node_3486 <- node_691 <- node_1185 <- node_2913 <- node_3658 <- node_2396 <- node_2755 <- node_4564 <- node_3139 (Distance: 32.00)
+4448c4448
+< SHORTEST PATH TO node_4056: node_4056 <- node_4922 <- node_4782 <- node_3817 <- node_3202 <- node_3900 <- node_3511 <- node_2755 <- node_4564 <- node_3139 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_4056: node_4056 <- node_4922 <- node_3700 <- node_3950 <- node_1495 <- node_2258 <- node_2755 <- node_4564 <- node_3139 (Distance: 32.00)
+4458c4458
+< SHORTEST PATH TO node_4226: node_4226 <- node_3635 <- node_2259 <- node_2560 <- node_1088 <- node_877 <- node_985 <- node_4564 <- node_3139 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_4226: node_4226 <- node_1854 <- node_1230 <- node_173 <- node_2706 <- node_3139 (Distance: 32.00)
+4513c4513
+< SHORTEST PATH TO node_2510: node_2510 <- node_1038 <- node_4196 <- node_573 <- node_3400 <- node_4861 <- node_1129 <- node_4564 <- node_3139 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_2510: node_2510 <- node_1038 <- node_694 <- node_1439 <- node_157 <- node_1669 <- node_1875 <- node_2706 <- node_3139 (Distance: 32.00)
+4818c4818
+< SHORTEST PATH TO node_631: node_631 <- node_2078 <- node_4533 <- node_4225 <- node_3139 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_631: node_631 <- node_965 <- node_452 <- node_964 <- node_2006 <- node_2706 <- node_3139 (Distance: 35.20)
+4848c4848
+< SHORTEST PATH TO node_2348: node_2348 <- node_2793 <- node_4287 <- node_2661 <- node_1391 <- node_2755 <- node_4564 <- node_3139 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_2348: node_2348 <- node_1771 <- node_3439 <- node_1203 <- node_173 <- node_2706 <- node_3139 (Distance: 35.20)
+4996c4996
+< SHORTEST PATH TO node_1162: node_1162 <- node_4638 <- node_1574 <- node_1458 <- node_1086 <- node_4740 <- node_2706 <- node_3139 (Distance: 41.60)
+---
+> SHORTEST PATH TO node_1162: node_1162 <- node_3797 <- node_430 <- node_1164 <- node_1700 <- node_3139 (Distance: 41.60)
+Comparando saidas/saida_heapcaso_teste_medio_3.txt com saidas/saida_matrixcaso_teste_medio_3.txt
+229c229
+< SHORTEST PATH TO node_179: node_179 <- node_4870 <- node_4530 <- node_3985 <- node_2235 <- node_4023 (Distance: 25.60)
+---
+> SHORTEST PATH TO node_179: node_179 <- node_1301 <- node_1308 <- node_2033 <- node_4023 (Distance: 25.60)
+480c480
+< SHORTEST PATH TO node_971: node_971 <- node_858 <- node_1807 <- node_4023 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_971: node_971 <- node_251 <- node_4043 <- node_3985 <- node_2235 <- node_4023 (Distance: 28.80)
+525c525
+< SHORTEST PATH TO node_2324: node_2324 <- node_3117 <- node_863 <- node_850 <- node_4023 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_2324: node_2324 <- node_968 <- node_1097 <- node_1406 <- node_2235 <- node_4023 (Distance: 28.80)
+984c984
+< SHORTEST PATH TO node_142: node_142 <- node_2324 <- node_3117 <- node_863 <- node_850 <- node_4023 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_142: node_142 <- node_2324 <- node_968 <- node_1097 <- node_1406 <- node_2235 <- node_4023 (Distance: 32.00)
+1178c1178
+< SHORTEST PATH TO node_2126: node_2126 <- node_971 <- node_858 <- node_1807 <- node_4023 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_2126: node_2126 <- node_971 <- node_251 <- node_4043 <- node_3985 <- node_2235 <- node_4023 (Distance: 32.00)
+1212c1212
+< SHORTEST PATH TO node_2493: node_2493 <- node_2038 <- node_2661 <- node_2033 <- node_4023 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_2493: node_2493 <- node_1960 <- node_4870 <- node_4530 <- node_3985 <- node_2235 <- node_4023 (Distance: 32.00)
+1216c1216
+< SHORTEST PATH TO node_2552: node_2552 <- node_2324 <- node_3117 <- node_863 <- node_850 <- node_4023 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_2552: node_2552 <- node_2324 <- node_968 <- node_1097 <- node_1406 <- node_2235 <- node_4023 (Distance: 32.00)
+1461c1461
+< SHORTEST PATH TO node_1732: node_1732 <- node_179 <- node_4870 <- node_4530 <- node_3985 <- node_2235 <- node_4023 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_1732: node_1732 <- node_179 <- node_1301 <- node_1308 <- node_2033 <- node_4023 (Distance: 32.00)
+1465c1465
+< SHORTEST PATH TO node_1882: node_1882 <- node_2922 <- node_1629 <- node_4127 <- node_670 <- node_3871 <- node_2033 <- node_4023 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_1882: node_1882 <- node_2015 <- node_489 <- node_2615 <- node_1404 <- node_3871 <- node_2033 <- node_4023 (Distance: 32.00)
+1474c1474
+< SHORTEST PATH TO node_2336: node_2336 <- node_179 <- node_4870 <- node_4530 <- node_3985 <- node_2235 <- node_4023 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_2336: node_2336 <- node_179 <- node_1301 <- node_1308 <- node_2033 <- node_4023 (Distance: 32.00)
+1509c1509
+< SHORTEST PATH TO node_3707: node_3707 <- node_2741 <- node_1506 <- node_2904 <- node_1404 <- node_3871 <- node_2033 <- node_4023 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_3707: node_3707 <- node_1430 <- node_3745 <- node_252 <- node_1873 <- node_3871 <- node_2033 <- node_4023 (Distance: 32.00)
+1886c1886
+< SHORTEST PATH TO node_4588: node_4588 <- node_3388 <- node_4205 <- node_670 <- node_3871 <- node_2033 <- node_4023 (Distance: 33.60)
+---
+> SHORTEST PATH TO node_4588: node_4588 <- node_1000 <- node_672 <- node_3730 <- node_2403 <- node_850 <- node_4023 (Distance: 33.60)
+2120c2120
+< SHORTEST PATH TO node_158: node_158 <- node_971 <- node_858 <- node_1807 <- node_4023 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_158: node_158 <- node_971 <- node_251 <- node_4043 <- node_3985 <- node_2235 <- node_4023 (Distance: 35.20)
+2147c2147
+< SHORTEST PATH TO node_402: node_402 <- node_4632 <- node_2615 <- node_1404 <- node_3871 <- node_2033 <- node_4023 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_402: node_402 <- node_1648 <- node_21 <- node_4689 <- node_1669 <- node_1406 <- node_2235 <- node_4023 (Distance: 35.20)
+2246c2246
+< SHORTEST PATH TO node_1190: node_1190 <- node_4768 <- node_1308 <- node_2033 <- node_4023 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_1190: node_1190 <- node_3482 <- node_239 <- node_2846 <- node_4023 (Distance: 35.20)
+2295c2295
+< SHORTEST PATH TO node_1511: node_1511 <- node_3094 <- node_583 <- node_670 <- node_3871 <- node_2033 <- node_4023 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_1511: node_1511 <- node_1843 <- node_877 <- node_282 <- node_2589 <- node_2762 <- node_850 <- node_4023 (Distance: 35.20)
+2396c2396
+< SHORTEST PATH TO node_2166: node_2166 <- node_2854 <- node_4823 <- node_4435 <- node_1480 <- node_4023 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_2166: node_2166 <- node_1938 <- node_1404 <- node_3871 <- node_2033 <- node_4023 (Distance: 35.20)
+2469c2469
+< SHORTEST PATH TO node_2631: node_2631 <- node_4469 <- node_3612 <- node_3749 <- node_4023 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_2631: node_2631 <- node_897 <- node_1480 <- node_4023 (Distance: 35.20)
+2572c2572
+< SHORTEST PATH TO node_3584: node_3584 <- node_4338 <- node_3892 <- node_3132 <- node_3871 <- node_2033 <- node_4023 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_3584: node_3584 <- node_1490 <- node_670 <- node_3871 <- node_2033 <- node_4023 (Distance: 35.20)
+2581c2581
+< SHORTEST PATH TO node_3657: node_3657 <- node_2552 <- node_2324 <- node_3117 <- node_863 <- node_850 <- node_4023 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_3657: node_3657 <- node_2552 <- node_2324 <- node_968 <- node_1097 <- node_1406 <- node_2235 <- node_4023 (Distance: 35.20)
+2619c2619
+< SHORTEST PATH TO node_4040: node_4040 <- node_4743 <- node_616 <- node_3132 <- node_3871 <- node_2033 <- node_4023 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_4040: node_4040 <- node_335 <- node_3901 <- node_2762 <- node_850 <- node_4023 (Distance: 35.20)
+2714c2714
+< SHORTEST PATH TO node_4730: node_4730 <- node_4728 <- node_2612 <- node_1806 <- node_3248 <- node_3345 <- node_2033 <- node_4023 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_4730: node_4730 <- node_3819 <- node_2119 <- node_1932 <- node_2934 <- node_2846 <- node_4023 (Distance: 35.20)
+2818c2818
+< SHORTEST PATH TO node_1971: node_1971 <- node_2336 <- node_179 <- node_4870 <- node_4530 <- node_3985 <- node_2235 <- node_4023 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_1971: node_1971 <- node_2336 <- node_179 <- node_1301 <- node_1308 <- node_2033 <- node_4023 (Distance: 35.20)
+2853c2853
+< SHORTEST PATH TO node_3015: node_3015 <- node_3707 <- node_2741 <- node_1506 <- node_2904 <- node_1404 <- node_3871 <- node_2033 <- node_4023 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_3015: node_3015 <- node_3707 <- node_1430 <- node_3745 <- node_252 <- node_1873 <- node_3871 <- node_2033 <- node_4023 (Distance: 35.20)
+2871c2871
+< SHORTEST PATH TO node_3455: node_3455 <- node_1732 <- node_179 <- node_4870 <- node_4530 <- node_3985 <- node_2235 <- node_4023 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_3455: node_3455 <- node_1732 <- node_179 <- node_1301 <- node_1308 <- node_2033 <- node_4023 (Distance: 35.20)
+2873c2873
+< SHORTEST PATH TO node_3480: node_3480 <- node_3707 <- node_2741 <- node_1506 <- node_2904 <- node_1404 <- node_3871 <- node_2033 <- node_4023 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_3480: node_3480 <- node_3707 <- node_1430 <- node_3745 <- node_252 <- node_1873 <- node_3871 <- node_2033 <- node_4023 (Distance: 35.20)
+2906c2906
+< SHORTEST PATH TO node_4748: node_4748 <- node_3707 <- node_2741 <- node_1506 <- node_2904 <- node_1404 <- node_3871 <- node_2033 <- node_4023 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_4748: node_4748 <- node_3707 <- node_1430 <- node_3745 <- node_252 <- node_1873 <- node_3871 <- node_2033 <- node_4023 (Distance: 35.20)
+3063c3063
+< SHORTEST PATH TO node_362: node_362 <- node_4802 <- node_3612 <- node_3749 <- node_4023 (Distance: 36.80)
+---
+> SHORTEST PATH TO node_362: node_362 <- node_3665 <- node_2588 <- node_2846 <- node_4023 (Distance: 36.80)
+3143c3143
+< SHORTEST PATH TO node_4251: node_4251 <- node_2126 <- node_971 <- node_858 <- node_1807 <- node_4023 (Distance: 36.80)
+---
+> SHORTEST PATH TO node_4251: node_4251 <- node_2126 <- node_971 <- node_251 <- node_4043 <- node_3985 <- node_2235 <- node_4023 (Distance: 36.80)
+3229c3229
+< SHORTEST PATH TO node_2301: node_2301 <- node_615 <- node_1155 <- node_371 <- node_1404 <- node_3871 <- node_2033 <- node_4023 (Distance: 36.80)
+---
+> SHORTEST PATH TO node_2301: node_2301 <- node_153 <- node_3175 <- node_398 <- node_1292 <- node_2846 <- node_4023 (Distance: 36.80)
+3251c3251
+< SHORTEST PATH TO node_2927: node_2927 <- node_2211 <- node_4337 <- node_868 <- node_2325 <- node_850 <- node_4023 (Distance: 36.80)
+---
+> SHORTEST PATH TO node_2927: node_2927 <- node_1521 <- node_3612 <- node_3749 <- node_4023 (Distance: 36.80)
+3496c3496
+< SHORTEST PATH TO node_3: node_3 <- node_3605 <- node_461 <- node_4980 <- node_632 <- node_2033 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_3: node_3 <- node_1869 <- node_4503 <- node_3871 <- node_2033 <- node_4023 (Distance: 38.40)
+3535c3535
+< SHORTEST PATH TO node_353: node_353 <- node_3170 <- node_4388 <- node_850 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_353: node_353 <- node_121 <- node_728 <- node_1406 <- node_2235 <- node_4023 (Distance: 38.40)
+3565c3565
+< SHORTEST PATH TO node_655: node_655 <- node_3293 <- node_2508 <- node_240 <- node_2589 <- node_2762 <- node_850 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_655: node_655 <- node_1825 <- node_2470 <- node_1308 <- node_2033 <- node_4023 (Distance: 38.40)
+3568c3568
+< SHORTEST PATH TO node_685: node_685 <- node_2961 <- node_236 <- node_1807 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_685: node_685 <- node_1620 <- node_3136 <- node_3676 <- node_1887 <- node_2762 <- node_850 <- node_4023 (Distance: 38.40)
+3583c3583
+< SHORTEST PATH TO node_763: node_763 <- node_179 <- node_4870 <- node_4530 <- node_3985 <- node_2235 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_763: node_763 <- node_179 <- node_1301 <- node_1308 <- node_2033 <- node_4023 (Distance: 38.40)
+3592c3592
+< SHORTEST PATH TO node_842: node_842 <- node_4458 <- node_4793 <- node_1669 <- node_1406 <- node_2235 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_842: node_842 <- node_1368 <- node_282 <- node_2589 <- node_2762 <- node_850 <- node_4023 (Distance: 38.40)
+3597c3597
+< SHORTEST PATH TO node_874: node_874 <- node_4792 <- node_724 <- node_4591 <- node_1675 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_874: node_874 <- node_3225 <- node_1937 <- node_81 <- node_4530 <- node_3985 <- node_2235 <- node_4023 (Distance: 38.40)
+3638c3638
+< SHORTEST PATH TO node_1171: node_1171 <- node_4493 <- node_2561 <- node_4355 <- node_104 <- node_2589 <- node_2762 <- node_850 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_1171: node_1171 <- node_1382 <- node_2358 <- node_1032 <- node_4043 <- node_3985 <- node_2235 <- node_4023 (Distance: 38.40)
+3663c3663
+< SHORTEST PATH TO node_1387: node_1387 <- node_2478 <- node_4127 <- node_670 <- node_3871 <- node_2033 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_1387: node_1387 <- node_2459 <- node_3838 <- node_3991 <- node_2934 <- node_2846 <- node_4023 (Distance: 38.40)
+3686c3686
+< SHORTEST PATH TO node_1594: node_1594 <- node_3670 <- node_724 <- node_4591 <- node_1675 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_1594: node_1594 <- node_1996 <- node_2235 <- node_4023 (Distance: 38.40)
+3753c3753
+< SHORTEST PATH TO node_2222: node_2222 <- node_4913 <- node_1884 <- node_2407 <- node_1616 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_2222: node_2222 <- node_1636 <- node_3497 <- node_2160 <- node_104 <- node_2589 <- node_2762 <- node_850 <- node_4023 (Distance: 38.40)
+3784c3784
+< SHORTEST PATH TO node_2533: node_2533 <- node_2006 <- node_830 <- node_1616 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_2533: node_2533 <- node_94 <- node_2121 <- node_968 <- node_1097 <- node_1406 <- node_2235 <- node_4023 (Distance: 38.40)
+3845c3845
+< SHORTEST PATH TO node_3092: node_3092 <- node_2525 <- node_2891 <- node_4577 <- node_1480 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_3092: node_3092 <- node_531 <- node_2980 <- node_4848 <- node_1616 <- node_4023 (Distance: 38.40)
+3851c3851
+< SHORTEST PATH TO node_3133: node_3133 <- node_3908 <- node_3878 <- node_2204 <- node_2325 <- node_850 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_3133: node_3133 <- node_2050 <- node_4121 <- node_1949 <- node_850 <- node_4023 (Distance: 38.40)
+3869c3869
+< SHORTEST PATH TO node_3322: node_3322 <- node_4803 <- node_2949 <- node_1308 <- node_2033 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_3322: node_3322 <- node_1491 <- node_4861 <- node_28 <- node_2033 <- node_4023 (Distance: 38.40)
+3891c3891
+< SHORTEST PATH TO node_3472: node_3472 <- node_2166 <- node_2854 <- node_4823 <- node_4435 <- node_1480 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_3472: node_3472 <- node_2166 <- node_1938 <- node_1404 <- node_3871 <- node_2033 <- node_4023 (Distance: 38.40)
+3944c3944
+< SHORTEST PATH TO node_3968: node_3968 <- node_4730 <- node_4728 <- node_2612 <- node_1806 <- node_3248 <- node_3345 <- node_2033 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_3968: node_3968 <- node_4730 <- node_3819 <- node_2119 <- node_1932 <- node_2934 <- node_2846 <- node_4023 (Distance: 38.40)
+3980c3980
+< SHORTEST PATH TO node_4323: node_4323 <- node_3098 <- node_3337 <- node_1404 <- node_3871 <- node_2033 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_4323: node_4323 <- node_1935 <- node_4985 <- node_2831 <- node_850 <- node_4023 (Distance: 38.40)
+4000c4000
+< SHORTEST PATH TO node_4509: node_4509 <- node_4946 <- node_631 <- node_4545 <- node_2517 <- node_3345 <- node_2033 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_4509: node_4509 <- node_453 <- node_1050 <- node_3407 <- node_3872 <- node_863 <- node_850 <- node_4023 (Distance: 38.40)
+4055c4055
+< SHORTEST PATH TO node_4959: node_4959 <- node_3584 <- node_4338 <- node_3892 <- node_3132 <- node_3871 <- node_2033 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_4959: node_4959 <- node_3584 <- node_1490 <- node_670 <- node_3871 <- node_2033 <- node_4023 (Distance: 38.40)
+4063c4063
+< SHORTEST PATH TO node_232: node_232 <- node_1971 <- node_2336 <- node_179 <- node_4870 <- node_4530 <- node_3985 <- node_2235 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_232: node_232 <- node_1971 <- node_2336 <- node_179 <- node_1301 <- node_1308 <- node_2033 <- node_4023 (Distance: 38.40)
+4102c4102
+< SHORTEST PATH TO node_2647: node_2647 <- node_1882 <- node_2922 <- node_1629 <- node_4127 <- node_670 <- node_3871 <- node_2033 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_2647: node_2647 <- node_1882 <- node_2015 <- node_489 <- node_2615 <- node_1404 <- node_3871 <- node_2033 <- node_4023 (Distance: 38.40)
+4133c4133
+< SHORTEST PATH TO node_4224: node_4224 <- node_4748 <- node_3707 <- node_2741 <- node_1506 <- node_2904 <- node_1404 <- node_3871 <- node_2033 <- node_4023 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_4224: node_4224 <- node_4748 <- node_3707 <- node_1430 <- node_3745 <- node_252 <- node_1873 <- node_3871 <- node_2033 <- node_4023 (Distance: 38.40)
+4247c4247
+< SHORTEST PATH TO node_3692: node_3692 <- node_1882 <- node_2922 <- node_1629 <- node_4127 <- node_670 <- node_3871 <- node_2033 <- node_4023 (Distance: 39.60)
+---
+> SHORTEST PATH TO node_3692: node_3692 <- node_1882 <- node_2015 <- node_489 <- node_2615 <- node_1404 <- node_3871 <- node_2033 <- node_4023 (Distance: 39.60)
+4318c4318
+< SHORTEST PATH TO node_3411: node_3411 <- node_3968 <- node_4730 <- node_4728 <- node_2612 <- node_1806 <- node_3248 <- node_3345 <- node_2033 <- node_4023 (Distance: 40.00)
+---
+> SHORTEST PATH TO node_3411: node_3411 <- node_3968 <- node_4730 <- node_3819 <- node_2119 <- node_1932 <- node_2934 <- node_2846 <- node_4023 (Distance: 40.00)
+4384c4384
+< SHORTEST PATH TO node_3296: node_3296 <- node_2718 <- node_4385 <- node_665 <- node_2911 <- node_371 <- node_1404 <- node_3871 <- node_2033 <- node_4023 (Distance: 40.00)
+---
+> SHORTEST PATH TO node_3296: node_3296 <- node_1016 <- node_2751 <- node_4337 <- node_868 <- node_2325 <- node_850 <- node_4023 (Distance: 40.00)
+4472c4472
+< SHORTEST PATH TO node_3517: node_3517 <- node_1387 <- node_2478 <- node_4127 <- node_670 <- node_3871 <- node_2033 <- node_4023 (Distance: 40.80)
+---
+> SHORTEST PATH TO node_3517: node_3517 <- node_1387 <- node_2459 <- node_3838 <- node_3991 <- node_2934 <- node_2846 <- node_4023 (Distance: 40.80)
+4479c4479
+< SHORTEST PATH TO node_4453: node_4453 <- node_4894 <- node_1457 <- node_4498 <- node_2001 <- node_3884 <- node_230 <- node_2403 <- node_850 <- node_4023 (Distance: 40.80)
+---
+> SHORTEST PATH TO node_4453: node_4453 <- node_2635 <- node_3270 <- node_1152 <- node_2846 <- node_4023 (Distance: 40.80)
+4508c4508
+< SHORTEST PATH TO node_730: node_730 <- node_2493 <- node_2038 <- node_2661 <- node_2033 <- node_4023 (Distance: 41.60)
+---
+> SHORTEST PATH TO node_730: node_730 <- node_2493 <- node_1960 <- node_4870 <- node_4530 <- node_3985 <- node_2235 <- node_4023 (Distance: 41.60)
+4545c4545
+< SHORTEST PATH TO node_3231: node_3231 <- node_4529 <- node_3519 <- node_1404 <- node_3871 <- node_2033 <- node_4023 (Distance: 41.60)
+---
+> SHORTEST PATH TO node_3231: node_3231 <- node_113 <- node_4987 <- node_425 <- node_4848 <- node_1616 <- node_4023 (Distance: 41.60)
+4572c4572
+< SHORTEST PATH TO node_4777: node_4777 <- node_2247 <- node_1748 <- node_3248 <- node_3345 <- node_2033 <- node_4023 (Distance: 41.60)
+---
+> SHORTEST PATH TO node_4777: node_4777 <- node_1297 <- node_108 <- node_3427 <- node_1308 <- node_2033 <- node_4023 (Distance: 41.60)
+4693c4693
+< SHORTEST PATH TO node_3619: node_3619 <- node_2637 <- node_4556 <- node_463 <- node_4901 <- node_1098 <- node_2235 <- node_4023 (Distance: 41.60)
+---
+> SHORTEST PATH TO node_3619: node_3619 <- node_50 <- node_2045 <- node_4870 <- node_4530 <- node_3985 <- node_2235 <- node_4023 (Distance: 41.60)
+4725c4725
+< SHORTEST PATH TO node_4311: node_4311 <- node_1171 <- node_4493 <- node_2561 <- node_4355 <- node_104 <- node_2589 <- node_2762 <- node_850 <- node_4023 (Distance: 41.60)
+---
+> SHORTEST PATH TO node_4311: node_4311 <- node_1171 <- node_1382 <- node_2358 <- node_1032 <- node_4043 <- node_3985 <- node_2235 <- node_4023 (Distance: 41.60)
+4738c4738
+< SHORTEST PATH TO node_4876: node_4876 <- node_4730 <- node_4728 <- node_2612 <- node_1806 <- node_3248 <- node_3345 <- node_2033 <- node_4023 (Distance: 41.60)
+---
+> SHORTEST PATH TO node_4876: node_4876 <- node_4730 <- node_3819 <- node_2119 <- node_1932 <- node_2934 <- node_2846 <- node_4023 (Distance: 41.60)
+4742c4742
+< SHORTEST PATH TO node_4993: node_4993 <- node_1053 <- node_1359 <- node_3800 <- node_1248 <- node_2934 <- node_2846 <- node_4023 (Distance: 41.60)
+---
+> SHORTEST PATH TO node_4993: node_4993 <- node_966 <- node_1675 <- node_4023 (Distance: 41.60)
+4759c4759
+< SHORTEST PATH TO node_2666: node_2666 <- node_2647 <- node_1882 <- node_2922 <- node_1629 <- node_4127 <- node_670 <- node_3871 <- node_2033 <- node_4023 (Distance: 41.60)
+---
+> SHORTEST PATH TO node_2666: node_2666 <- node_2647 <- node_1882 <- node_2015 <- node_489 <- node_2615 <- node_1404 <- node_3871 <- node_2033 <- node_4023 (Distance: 41.60)
+4928c4928
+< SHORTEST PATH TO node_3409: node_3409 <- node_4741 <- node_161 <- node_421 <- node_1908 <- node_4577 <- node_1480 <- node_4023 (Distance: 44.80)
+---
+> SHORTEST PATH TO node_3409: node_3409 <- node_2870 <- node_914 <- node_252 <- node_1873 <- node_3871 <- node_2033 <- node_4023 (Distance: 44.80)
+4939c4939
+< SHORTEST PATH TO node_4212: node_4212 <- node_2362 <- node_2033 <- node_4023 (Distance: 44.80)
+---
+> SHORTEST PATH TO node_4212: node_4212 <- node_1303 <- node_3676 <- node_1887 <- node_2762 <- node_850 <- node_4023 (Distance: 44.80)
+4980c4980
+< SHORTEST PATH TO node_4634: node_4634 <- node_2342 <- node_3991 <- node_2934 <- node_2846 <- node_4023 (Distance: 48.00)
+---
+> SHORTEST PATH TO node_4634: node_4634 <- node_1526 <- node_3528 <- node_4296 <- node_4023 (Distance: 48.00)
+4986c4986
+< SHORTEST PATH TO node_4379: node_4379 <- node_1006 <- node_4400 <- node_377 <- node_2831 <- node_850 <- node_4023 (Distance: 48.00)
+---
+> SHORTEST PATH TO node_4379: node_4379 <- node_505 <- node_4278 <- node_377 <- node_2831 <- node_850 <- node_4023 (Distance: 48.00)
+Comparando saidas/saida_heapcaso_teste_medio_4.txt com saidas/saida_matrixcaso_teste_medio_4.txt
+1108c1108
+< SHORTEST PATH TO node_8: node_8 <- node_5120 <- node_3852 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_8: node_8 <- node_3027 <- node_5991 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 28.80)
+1159c1159
+< SHORTEST PATH TO node_2603: node_2603 <- node_2465 <- node_3983 <- node_2135 <- node_279 <- node_578 <- node_462 <- node_4140 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_2603: node_2603 <- node_694 <- node_2915 <- node_4031 <- node_2316 <- node_3351 <- node_462 <- node_4140 (Distance: 28.80)
+1251c1251
+< SHORTEST PATH TO node_5796: node_5796 <- node_2223 <- node_3896 <- node_5675 <- node_2655 <- node_2109 <- node_462 <- node_4140 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_5796: node_5796 <- node_463 <- node_5486 <- node_4031 <- node_2316 <- node_3351 <- node_462 <- node_4140 (Distance: 28.80)
+1258c1258
+< SHORTEST PATH TO node_5987: node_5987 <- node_2358 <- node_121 <- node_3893 <- node_462 <- node_4140 (Distance: 28.80)
+---
+> SHORTEST PATH TO node_5987: node_5987 <- node_812 <- node_121 <- node_3893 <- node_462 <- node_4140 (Distance: 28.80)
+1582c1582
+< SHORTEST PATH TO node_5138: node_5138 <- node_4700 <- node_898 <- node_1617 <- node_5131 <- node_4140 (Distance: 30.40)
+---
+> SHORTEST PATH TO node_5138: node_5138 <- node_1564 <- node_1816 <- node_4031 <- node_2316 <- node_3351 <- node_462 <- node_4140 (Distance: 30.40)
+1986c1986
+< SHORTEST PATH TO node_475: node_475 <- node_2411 <- node_5555 <- node_2109 <- node_462 <- node_4140 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_475: node_475 <- node_1420 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 32.00)
+2018c2018
+< SHORTEST PATH TO node_796: node_796 <- node_4457 <- node_5390 <- node_3638 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_796: node_796 <- node_1367 <- node_1927 <- node_4140 (Distance: 32.00)
+2155c2155
+< SHORTEST PATH TO node_2013: node_2013 <- node_5854 <- node_5472 <- node_4002 <- node_5131 <- node_4140 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_2013: node_2013 <- node_3969 <- node_394 <- node_462 <- node_4140 (Distance: 32.00)
+2173c2173
+< SHORTEST PATH TO node_2141: node_2141 <- node_5486 <- node_4031 <- node_2316 <- node_3351 <- node_462 <- node_4140 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_2141: node_2141 <- node_3213 <- node_871 <- node_2316 <- node_3351 <- node_462 <- node_4140 (Distance: 32.00)
+2306c2306
+< SHORTEST PATH TO node_3307: node_3307 <- node_2322 <- node_2942 <- node_578 <- node_462 <- node_4140 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_3307: node_3307 <- node_905 <- node_4376 <- node_3638 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 32.00)
+2373c2373
+< SHORTEST PATH TO node_3993: node_3993 <- node_5964 <- node_2750 <- node_5378 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_3993: node_3993 <- node_446 <- node_4405 <- node_63 <- node_5555 <- node_2109 <- node_462 <- node_4140 (Distance: 32.00)
+2659c2659
+< SHORTEST PATH TO node_1440: node_1440 <- node_5320 <- node_1890 <- node_5004 <- node_4026 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_1440: node_1440 <- node_105 <- node_2902 <- node_1970 <- node_5457 <- node_578 <- node_462 <- node_4140 (Distance: 32.00)
+2678c2678
+< SHORTEST PATH TO node_1811: node_1811 <- node_4307 <- node_2465 <- node_3983 <- node_2135 <- node_279 <- node_578 <- node_462 <- node_4140 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_1811: node_1811 <- node_4030 <- node_4997 <- node_3699 <- node_5317 <- node_4140 (Distance: 32.00)
+2704c2704
+< SHORTEST PATH TO node_2414: node_2414 <- node_5987 <- node_2358 <- node_121 <- node_3893 <- node_462 <- node_4140 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_2414: node_2414 <- node_5987 <- node_812 <- node_121 <- node_3893 <- node_462 <- node_4140 (Distance: 32.00)
+2758c2758
+< SHORTEST PATH TO node_3761: node_3761 <- node_3382 <- node_1874 <- node_9 <- node_4002 <- node_5131 <- node_4140 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_3761: node_3761 <- node_2917 <- node_2666 <- node_3896 <- node_5675 <- node_2655 <- node_2109 <- node_462 <- node_4140 (Distance: 32.00)
+2780c2780
+< SHORTEST PATH TO node_4241: node_4241 <- node_5161 <- node_1874 <- node_9 <- node_4002 <- node_5131 <- node_4140 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_4241: node_4241 <- node_3633 <- node_4967 <- node_5299 <- node_1681 <- node_578 <- node_462 <- node_4140 (Distance: 32.00)
+2790c2790
+< SHORTEST PATH TO node_4507: node_4507 <- node_5987 <- node_2358 <- node_121 <- node_3893 <- node_462 <- node_4140 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_4507: node_4507 <- node_5987 <- node_812 <- node_121 <- node_3893 <- node_462 <- node_4140 (Distance: 32.00)
+2830c2830
+< SHORTEST PATH TO node_5452: node_5452 <- node_8 <- node_5120 <- node_3852 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 32.00)
+---
+> SHORTEST PATH TO node_5452: node_5452 <- node_8 <- node_3027 <- node_5991 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 32.00)
+2875c2875
+< SHORTEST PATH TO node_3094: node_3094 <- node_2141 <- node_5486 <- node_4031 <- node_2316 <- node_3351 <- node_462 <- node_4140 (Distance: 32.40)
+---
+> SHORTEST PATH TO node_3094: node_3094 <- node_2141 <- node_3213 <- node_871 <- node_2316 <- node_3351 <- node_462 <- node_4140 (Distance: 32.40)
+3000c3000
+< SHORTEST PATH TO node_1740: node_1740 <- node_5987 <- node_2358 <- node_121 <- node_3893 <- node_462 <- node_4140 (Distance: 32.80)
+---
+> SHORTEST PATH TO node_1740: node_1740 <- node_5987 <- node_812 <- node_121 <- node_3893 <- node_462 <- node_4140 (Distance: 32.80)
+3178c3178
+< SHORTEST PATH TO node_1289: node_1289 <- node_475 <- node_2411 <- node_5555 <- node_2109 <- node_462 <- node_4140 (Distance: 33.60)
+---
+> SHORTEST PATH TO node_1289: node_1289 <- node_475 <- node_1420 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 33.60)
+3247c3247
+< SHORTEST PATH TO node_257: node_257 <- node_5138 <- node_4700 <- node_898 <- node_1617 <- node_5131 <- node_4140 (Distance: 33.60)
+---
+> SHORTEST PATH TO node_257: node_257 <- node_5138 <- node_1564 <- node_1816 <- node_4031 <- node_2316 <- node_3351 <- node_462 <- node_4140 (Distance: 33.60)
+3394c3394
+< SHORTEST PATH TO node_3711: node_3711 <- node_1036 <- node_4607 <- node_4867 <- node_113 <- node_2908 <- node_462 <- node_4140 (Distance: 33.60)
+---
+> SHORTEST PATH TO node_3711: node_3711 <- node_210 <- node_4717 <- node_4736 <- node_3244 <- node_3351 <- node_462 <- node_4140 (Distance: 33.60)
+3484c3484
+< SHORTEST PATH TO node_5535: node_5535 <- node_4507 <- node_5987 <- node_2358 <- node_121 <- node_3893 <- node_462 <- node_4140 (Distance: 33.60)
+---
+> SHORTEST PATH TO node_5535: node_5535 <- node_4507 <- node_5987 <- node_812 <- node_121 <- node_3893 <- node_462 <- node_4140 (Distance: 33.60)
+3909c3909
+< SHORTEST PATH TO node_676: node_676 <- node_1289 <- node_475 <- node_2411 <- node_5555 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_676: node_676 <- node_1289 <- node_475 <- node_1420 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+3940c3940
+< SHORTEST PATH TO node_173: node_173 <- node_475 <- node_2411 <- node_5555 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_173: node_173 <- node_475 <- node_1420 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+3952c3952
+< SHORTEST PATH TO node_252: node_252 <- node_4696 <- node_3550 <- node_783 <- node_4002 <- node_5131 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_252: node_252 <- node_1499 <- node_4125 <- node_5457 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+4051c4051
+< SHORTEST PATH TO node_1140: node_1140 <- node_4355 <- node_1484 <- node_5457 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_1140: node_1140 <- node_2896 <- node_5498 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+4085c4085
+< SHORTEST PATH TO node_1423: node_1423 <- node_4932 <- node_4906 <- node_843 <- node_5675 <- node_2655 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_1423: node_1423 <- node_2959 <- node_736 <- node_5559 <- node_462 <- node_4140 (Distance: 35.20)
+4155c4155
+< SHORTEST PATH TO node_2190: node_2190 <- node_2864 <- node_761 <- node_2608 <- node_2135 <- node_279 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_2190: node_2190 <- node_1797 <- node_991 <- node_1510 <- node_5675 <- node_2655 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+4166c4166
+< SHORTEST PATH TO node_2307: node_2307 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_2307: node_2307 <- node_1681 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+4181c4181
+< SHORTEST PATH TO node_2489: node_2489 <- node_1456 <- node_5443 <- node_4548 <- node_2735 <- node_5131 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_2489: node_2489 <- node_322 <- node_643 <- node_836 <- node_4140 (Distance: 35.20)
+4187c4187
+< SHORTEST PATH TO node_2534: node_2534 <- node_4566 <- node_3429 <- node_2297 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_2534: node_2534 <- node_668 <- node_2089 <- node_2065 <- node_2655 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+4194c4194
+< SHORTEST PATH TO node_2613: node_2613 <- node_4960 <- node_2628 <- node_5497 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_2613: node_2613 <- node_2933 <- node_3864 <- node_1681 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+4206c4206
+< SHORTEST PATH TO node_2726: node_2726 <- node_2132 <- node_2370 <- node_5498 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_2726: node_2726 <- node_1333 <- node_3075 <- node_5486 <- node_4031 <- node_2316 <- node_3351 <- node_462 <- node_4140 (Distance: 35.20)
+4219,4220c4219,4220
+< SHORTEST PATH TO node_2812: node_2812 <- node_2738 <- node_1755 <- node_3691 <- node_2655 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+< SHORTEST PATH TO node_2816: node_2816 <- node_3511 <- node_2782 <- node_5498 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_2812: node_2812 <- node_746 <- node_3586 <- node_5378 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+> SHORTEST PATH TO node_2816: node_2816 <- node_1963 <- node_3337 <- node_1961 <- node_5498 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+4224c4224
+< SHORTEST PATH TO node_2839: node_2839 <- node_4566 <- node_3429 <- node_2297 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_2839: node_2839 <- node_3432 <- node_462 <- node_4140 (Distance: 35.20)
+4244c4244
+< SHORTEST PATH TO node_3060: node_3060 <- node_2061 <- node_63 <- node_5555 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_3060: node_3060 <- node_1420 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+4268c4268
+< SHORTEST PATH TO node_3235: node_3235 <- node_4659 <- node_546 <- node_2608 <- node_2135 <- node_279 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_3235: node_3235 <- node_1750 <- node_3563 <- node_1180 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+4292c4292
+< SHORTEST PATH TO node_3450: node_3450 <- node_4377 <- node_4687 <- node_2370 <- node_5498 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_3450: node_3450 <- node_2781 <- node_1496 <- node_961 <- node_612 <- node_5131 <- node_4140 (Distance: 35.20)
+4362c4362
+< SHORTEST PATH TO node_4036: node_4036 <- node_2402 <- node_5299 <- node_1681 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_4036: node_4036 <- node_940 <- node_9 <- node_4002 <- node_5131 <- node_4140 (Distance: 35.20)
+4374,4375c4374,4375
+< SHORTEST PATH TO node_4180: node_4180 <- node_4468 <- node_1042 <- node_2261 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+< SHORTEST PATH TO node_4194: node_4194 <- node_5564 <- node_5378 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_4180: node_4180 <- node_1762 <- node_3550 <- node_783 <- node_4002 <- node_5131 <- node_4140 (Distance: 35.20)
+> SHORTEST PATH TO node_4194: node_4194 <- node_953 <- node_2166 <- node_5498 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+4409c4409
+< SHORTEST PATH TO node_4550: node_4550 <- node_3993 <- node_5964 <- node_2750 <- node_5378 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_4550: node_4550 <- node_3993 <- node_446 <- node_4405 <- node_63 <- node_5555 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+4453c4453
+< SHORTEST PATH TO node_4945: node_4945 <- node_2872 <- node_2470 <- node_5695 <- node_2782 <- node_5498 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_4945: node_4945 <- node_1676 <- node_3583 <- node_5785 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+4555c4555
+< SHORTEST PATH TO node_5935: node_5935 <- node_2116 <- node_3739 <- node_3769 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_5935: node_5935 <- node_698 <- node_3105 <- node_5378 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+4590c4590
+< SHORTEST PATH TO node_851: node_851 <- node_3761 <- node_3382 <- node_1874 <- node_9 <- node_4002 <- node_5131 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_851: node_851 <- node_3761 <- node_2917 <- node_2666 <- node_3896 <- node_5675 <- node_2655 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+4648c4648
+< SHORTEST PATH TO node_2749: node_2749 <- node_5987 <- node_2358 <- node_121 <- node_3893 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_2749: node_2749 <- node_5987 <- node_812 <- node_121 <- node_3893 <- node_462 <- node_4140 (Distance: 35.20)
+4680c4680
+< SHORTEST PATH TO node_3485: node_3485 <- node_1811 <- node_4307 <- node_2465 <- node_3983 <- node_2135 <- node_279 <- node_578 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_3485: node_3485 <- node_1811 <- node_4030 <- node_4997 <- node_3699 <- node_5317 <- node_4140 (Distance: 35.20)
+4707c4707
+< SHORTEST PATH TO node_4364: node_4364 <- node_8 <- node_5120 <- node_3852 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+---
+> SHORTEST PATH TO node_4364: node_4364 <- node_8 <- node_3027 <- node_5991 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 35.20)
+4779c4779
+< SHORTEST PATH TO node_5792: node_5792 <- node_3094 <- node_2141 <- node_5486 <- node_4031 <- node_2316 <- node_3351 <- node_462 <- node_4140 (Distance: 35.60)
+---
+> SHORTEST PATH TO node_5792: node_5792 <- node_3094 <- node_2141 <- node_3213 <- node_871 <- node_2316 <- node_3351 <- node_462 <- node_4140 (Distance: 35.60)
+5005c5005
+< SHORTEST PATH TO node_2746: node_2746 <- node_2726 <- node_2132 <- node_2370 <- node_5498 <- node_578 <- node_462 <- node_4140 (Distance: 36.80)
+---
+> SHORTEST PATH TO node_2746: node_2746 <- node_2726 <- node_1333 <- node_3075 <- node_5486 <- node_4031 <- node_2316 <- node_3351 <- node_462 <- node_4140 (Distance: 36.80)
+5174c5174
+< SHORTEST PATH TO node_5801: node_5801 <- node_5280 <- node_636 <- node_3258 <- node_5390 <- node_3638 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 36.80)
+---
+> SHORTEST PATH TO node_5801: node_5801 <- node_3474 <- node_5051 <- node_852 <- node_369 <- node_3691 <- node_2655 <- node_2109 <- node_462 <- node_4140 (Distance: 36.80)
+5386c5386
+< SHORTEST PATH TO node_1364: node_1364 <- node_676 <- node_1289 <- node_475 <- node_2411 <- node_5555 <- node_2109 <- node_462 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_1364: node_1364 <- node_676 <- node_1289 <- node_475 <- node_1420 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 38.40)
+5389c5389
+< SHORTEST PATH TO node_3111: node_3111 <- node_2746 <- node_2726 <- node_2132 <- node_2370 <- node_5498 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_3111: node_3111 <- node_2746 <- node_2726 <- node_1333 <- node_3075 <- node_5486 <- node_4031 <- node_2316 <- node_3351 <- node_462 <- node_4140 (Distance: 38.40)
+5412c5412
+< SHORTEST PATH TO node_518: node_518 <- node_5391 <- node_5721 <- node_4026 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_518: node_518 <- node_390 <- node_647 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+5417c5417
+< SHORTEST PATH TO node_705: node_705 <- node_5612 <- node_791 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_705: node_705 <- node_184 <- node_1706 <- node_1131 <- node_870 <- node_723 <- node_424 <- node_836 <- node_4140 (Distance: 38.40)
+5437c5437
+< SHORTEST PATH TO node_1149: node_1149 <- node_4180 <- node_4468 <- node_1042 <- node_2261 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_1149: node_1149 <- node_4180 <- node_1762 <- node_3550 <- node_783 <- node_4002 <- node_5131 <- node_4140 (Distance: 38.40)
+5455c5455
+< SHORTEST PATH TO node_1457: node_1457 <- node_1423 <- node_4932 <- node_4906 <- node_843 <- node_5675 <- node_2655 <- node_2109 <- node_462 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_1457: node_1457 <- node_1423 <- node_2959 <- node_736 <- node_5559 <- node_462 <- node_4140 (Distance: 38.40)
+5470,5471c5470,5471
+< SHORTEST PATH TO node_1795: node_1795 <- node_2812 <- node_2738 <- node_1755 <- node_3691 <- node_2655 <- node_2109 <- node_462 <- node_4140 (Distance: 38.40)
+< SHORTEST PATH TO node_1800: node_1800 <- node_4405 <- node_63 <- node_5555 <- node_2109 <- node_462 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_1795: node_1795 <- node_2812 <- node_746 <- node_3586 <- node_5378 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+> SHORTEST PATH TO node_1800: node_1800 <- node_2628 <- node_5497 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+5489c5489
+< SHORTEST PATH TO node_2143: node_2143 <- node_5034 <- node_921 <- node_3238 <- node_961 <- node_612 <- node_5131 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_2143: node_2143 <- node_2631 <- node_3444 <- node_5299 <- node_1681 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+5492c5492
+< SHORTEST PATH TO node_2161: node_2161 <- node_4108 <- node_5131 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_2161: node_2161 <- node_2663 <- node_3958 <- node_3699 <- node_5317 <- node_4140 (Distance: 38.40)
+5496c5496
+< SHORTEST PATH TO node_2279: node_2279 <- node_5513 <- node_4798 <- node_2290 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_2279: node_2279 <- node_1823 <- node_135 <- node_4859 <- node_5780 <- node_2316 <- node_3351 <- node_462 <- node_4140 (Distance: 38.40)
+5538c5538
+< SHORTEST PATH TO node_3091: node_3091 <- node_4194 <- node_5564 <- node_5378 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_3091: node_3091 <- node_4194 <- node_953 <- node_2166 <- node_5498 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+5547c5547
+< SHORTEST PATH TO node_3334: node_3334 <- node_796 <- node_4457 <- node_5390 <- node_3638 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_3334: node_3334 <- node_796 <- node_1367 <- node_1927 <- node_4140 (Distance: 38.40)
+5573c5573
+< SHORTEST PATH TO node_3710: node_3710 <- node_3307 <- node_2322 <- node_2942 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_3710: node_3710 <- node_3307 <- node_905 <- node_4376 <- node_3638 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+5581c5581
+< SHORTEST PATH TO node_3877: node_3877 <- node_2581 <- node_2292 <- node_2061 <- node_63 <- node_5555 <- node_2109 <- node_462 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_3877: node_3877 <- node_732 <- node_229 <- node_791 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+5587c5587
+< SHORTEST PATH TO node_3999: node_3999 <- node_1622 <- node_1171 <- node_63 <- node_5555 <- node_2109 <- node_462 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_3999: node_3999 <- node_213 <- node_3750 <- node_2135 <- node_279 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+5589c5589
+< SHORTEST PATH TO node_4028: node_4028 <- node_2171 <- node_2643 <- node_3244 <- node_3351 <- node_462 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_4028: node_4028 <- node_1407 <- node_229 <- node_791 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+5595c5595
+< SHORTEST PATH TO node_4254: node_4254 <- node_5909 <- node_4116 <- node_953 <- node_2166 <- node_5498 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_4254: node_4254 <- node_788 <- node_2713 <- node_3063 <- node_2166 <- node_5498 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+5602c5602
+< SHORTEST PATH TO node_4429: node_4429 <- node_3993 <- node_5964 <- node_2750 <- node_5378 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_4429: node_4429 <- node_3993 <- node_446 <- node_4405 <- node_63 <- node_5555 <- node_2109 <- node_462 <- node_4140 (Distance: 38.40)
+5633c5633
+< SHORTEST PATH TO node_5277: node_5277 <- node_3866 <- node_80 <- node_474 <- node_858 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_5277: node_5277 <- node_2009 <- node_3953 <- node_5910 <- node_5498 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+5656c5656
+< SHORTEST PATH TO node_5594: node_5594 <- node_5133 <- node_858 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_5594: node_5594 <- node_2826 <- node_5169 <- node_3298 <- node_2135 <- node_279 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+5659c5659
+< SHORTEST PATH TO node_5681: node_5681 <- node_2013 <- node_5854 <- node_5472 <- node_4002 <- node_5131 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_5681: node_5681 <- node_2013 <- node_3969 <- node_394 <- node_462 <- node_4140 (Distance: 38.40)
+5670c5670
+< SHORTEST PATH TO node_5843: node_5843 <- node_4600 <- node_2322 <- node_2942 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+---
+> SHORTEST PATH TO node_5843: node_5843 <- node_1239 <- node_2557 <- node_4772 <- node_3638 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 38.40)
+5800c5800
+< SHORTEST PATH TO node_4460: node_4460 <- node_3682 <- node_3570 <- node_4054 <- node_462 <- node_4140 (Distance: 40.00)
+---
+> SHORTEST PATH TO node_4460: node_4460 <- node_472 <- node_5624 <- node_3579 <- node_5675 <- node_2655 <- node_2109 <- node_462 <- node_4140 (Distance: 40.00)
+5811c5811
+< SHORTEST PATH TO node_1682: node_1682 <- node_5696 <- node_5455 <- node_3743 <- node_4642 <- node_2370 <- node_5498 <- node_578 <- node_462 <- node_4140 (Distance: 40.00)
+---
+> SHORTEST PATH TO node_1682: node_1682 <- node_4071 <- node_5225 <- node_5152 <- node_3726 <- node_4031 <- node_2316 <- node_3351 <- node_462 <- node_4140 (Distance: 40.00)
+5899c5899
+< SHORTEST PATH TO node_1202: node_1202 <- node_5962 <- node_5910 <- node_5498 <- node_578 <- node_462 <- node_4140 (Distance: 41.60)
+---
+> SHORTEST PATH TO node_1202: node_1202 <- node_2965 <- node_2522 <- node_2370 <- node_5498 <- node_578 <- node_462 <- node_4140 (Distance: 41.60)
+5904c5904
+< SHORTEST PATH TO node_2273: node_2273 <- node_4429 <- node_3993 <- node_5964 <- node_2750 <- node_5378 <- node_4956 <- node_578 <- node_462 <- node_4140 (Distance: 41.60)
+---
+> SHORTEST PATH TO node_2273: node_2273 <- node_4429 <- node_3993 <- node_446 <- node_4405 <- node_63 <- node_5555 <- node_2109 <- node_462 <- node_4140 (Distance: 41.60)
+5919c5919
+< SHORTEST PATH TO node_4010: node_4010 <- node_4726 <- node_1420 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 41.60)
+---
+> SHORTEST PATH TO node_4010: node_4010 <- node_1808 <- node_871 <- node_2316 <- node_3351 <- node_462 <- node_4140 (Distance: 41.60)
+5927c5927
+< SHORTEST PATH TO node_5776: node_5776 <- node_3706 <- node_3587 <- node_4726 <- node_1420 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 41.60)
+---
+> SHORTEST PATH TO node_5776: node_5776 <- node_1758 <- node_2381 <- node_5555 <- node_2109 <- node_462 <- node_4140 (Distance: 41.60)
+5981c5981
+< SHORTEST PATH TO node_2391: node_2391 <- node_475 <- node_2411 <- node_5555 <- node_2109 <- node_462 <- node_4140 (Distance: 44.80)
+---
+> SHORTEST PATH TO node_2391: node_2391 <- node_475 <- node_1420 <- node_4716 <- node_2109 <- node_462 <- node_4140 (Distance: 44.80)
+6000c6000
+< SHORTEST PATH TO node_2890: node_2890 <- node_5333 <- node_2672 <- node_3691 <- node_2655 <- node_2109 <- node_462 <- node_4140 (Distance: 48.00)
+---
+> SHORTEST PATH TO node_2890: node_2890 <- node_1465 <- node_2215 <- node_3805 <- node_5675 <- node_2655 <- node_2109 <- node_462 <- node_4140 (Distance: 48.00)
+Comparando saidas/saida_heapcaso_teste_muito_pequeno_1.txt com saidas/saida_matrixcaso_teste_muito_pequeno_1.txt
+Comparando saidas/saida_heapcaso_teste_muito_pequeno_2.txt com saidas/saida_matrixcaso_teste_muito_pequeno_2.txt
+Comparando saidas/saida_heapcaso_teste_pequeno_1.txt com saidas/saida_matrixcaso_teste_pequeno_1.txt
+Comparando saidas/saida_heapcaso_teste_pequeno_2.txt com saidas/saida_matrixcaso_teste_pequeno_2.txt
+Comparando saidas/saida_heapcaso_teste_pequeno_3.txt com saidas/saida_matrixcaso_teste_pequeno_3.txt
+Comparando saidas/saida_heapcaso_teste_pequeno_4.txt com saidas/saida_matrixcaso_teste_pequeno_4.txt

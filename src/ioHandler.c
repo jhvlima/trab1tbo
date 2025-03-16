@@ -221,27 +221,62 @@ void lerArquivoEntradaMatrixToken(FILE* entrada, Matrix* matrix)
     //printf("Leitura finalizada!\n");
 }
 
+// Estrutura para armazenar caminho e distância
+typedef struct {
+    double distancia;
+    int idVertice;
+} Caminho;
+
+// Função de comparação para qsort (ordena da menor para a maior distância)
+int compararCaminhos(const void* a, const void* b) {
+    Caminho* caminhoA = (Caminho*)a;
+    Caminho* caminhoB = (Caminho*)b;
+    if (caminhoA->distancia < caminhoB->distancia) return -1;
+    if (caminhoA->distancia > caminhoB->distancia) return 1;
+    return 0;
+}
+
 void escreverArquivoSaidaGraph(FILE* saida, Node** arvoreMinima, Graph* graph)
 {
-    //printf("Imprimindo Saidas\n");
-    for(int i = 0; i < graphGetNVertices(graph); i++){
-        Vertice* vertice = graphGetVertice(graph, i);
+    int nVertices = graphGetNVertices(graph);
+
+    // Cria um array para armazenar os caminhos e distâncias
+    Caminho* caminhos = (Caminho*) malloc(nVertices * sizeof(Caminho));
+    if (!caminhos) {
+        fprintf(stderr, "Erro ao alocar memória para caminhos.\n");
+        return;
+    }
+
+    // Preenche o array com as distâncias e IDs dos vértices
+    for (int i = 0; i < nVertices; i++) {
+        caminhos[i].distancia = nodeGetDistancia(arvoreMinima[i]);
+        caminhos[i].idVertice = i;
+    }
+
+    // Ordena o array por distância (da menor para a maior)
+    qsort(caminhos, nVertices, sizeof(Caminho), compararCaminhos);
+
+    // Imprime os caminhos ordenados
+    for (int i = 0; i < nVertices; i++) {
+        int idVertice = caminhos[i].idVertice;
+        Vertice* vertice = graphGetVertice(graph, idVertice);
         fprintf(saida, "SHORTEST PATH TO %s: ", verticeGetName(vertice));
 
-        if(i == graphGetSource(graph)){
+        if (idVertice == graphGetSource(graph)) {
             fprintf(saida, "%s <- %s (Distance: 0.00)\n", verticeGetName(vertice), verticeGetName(vertice));
             continue;
         }
 
-        int leitor = i;
-        while(leitor != graphGetSource(graph)){
-            fprintf(saida, "%s <- ", verticeGetName(vertice));
+        int leitor = idVertice;
+        while (leitor != graphGetSource(graph)) {
+            fprintf(saida, "%s <- ", verticeGetName(graphGetVertice(graph, leitor)));
             leitor = nodeGetPai(arvoreMinima[leitor]);
-            vertice = graphGetVertice(graph, nodeGetId(arvoreMinima[leitor]));
         }
-        fprintf(saida, "%s (Distance: %.2f)\n", verticeGetName(vertice), nodeGetDistancia(arvoreMinima[i]));
+        fprintf(saida, "%s (Distance: %.2f)\n", verticeGetName(graphGetVertice(graph, leitor)), caminhos[i].distancia);
     }
-    //printf("Impressao finalizada\n");
+
+    // Libera a memória alocada para o array de caminhos
+    free(caminhos);
 }
 
 void escreverSaidaTerminalGraph(Node** arvoreMinima, Graph* graph)
@@ -267,21 +302,44 @@ void escreverSaidaTerminalGraph(Node** arvoreMinima, Graph* graph)
 
 void escreverArquivoSaidaMatrix(FILE* saida, Node** arvoreMinima, Matrix* matrix)
 {
-    for(int i = 0; i < matrixGetSize(matrix); i++){
-        fprintf(saida, "SHORTEST PATH TO %s: ", matrixGetNomeVertice(matrix, i));
+    int size = matrixGetSize(matrix);
 
-        if(i == matrixGetSource(matrix)){
-            fprintf(saida, "%s <- %s (Distance: 0.00)\n", matrixGetNomeVertice(matrix, i), matrixGetNomeVertice(matrix, i));
+    // Cria um array para armazenar os caminhos e distâncias
+    Caminho* caminhos = (Caminho*) malloc(size * sizeof(Caminho));
+    if (!caminhos) {
+        fprintf(stderr, "Erro ao alocar memória para caminhos.\n");
+        return;
+    }
+
+    // Preenche o array com as distâncias e IDs dos vértices
+    for (int i = 0; i < size; i++) {
+        caminhos[i].distancia = nodeGetDistancia(arvoreMinima[i]);
+        caminhos[i].idVertice = i;
+    }
+
+    // Ordena o array por distância (da menor para a maior)
+    qsort(caminhos, size, sizeof(Caminho), compararCaminhos);
+
+    // Imprime os caminhos ordenados
+    for (int i = 0; i < size; i++) {
+        int idVertice = caminhos[i].idVertice;
+        fprintf(saida, "SHORTEST PATH TO %s: ", matrixGetNomeVertice(matrix, idVertice));
+
+        if (idVertice == matrixGetSource(matrix)) {
+            fprintf(saida, "%s <- %s (Distance: 0.00)\n", matrixGetNomeVertice(matrix, idVertice), matrixGetNomeVertice(matrix, idVertice));
             continue;
         }
 
-        int leitor = i;
-        while(leitor != matrixGetSource(matrix)){
+        int leitor = idVertice;
+        while (leitor != matrixGetSource(matrix)) {
             fprintf(saida, "%s <- ", matrixGetNomeVertice(matrix, leitor));
             leitor = nodeGetPai(arvoreMinima[leitor]);
         }
-        fprintf(saida, "%s (Distance: %.2f)\n", matrixGetNomeVertice(matrix, leitor), nodeGetDistancia(arvoreMinima[i]));
+        fprintf(saida, "%s (Distance: %.2f)\n", matrixGetNomeVertice(matrix, leitor), caminhos[i].distancia);
     }
+
+    // Libera a memória alocada para o array de caminhos
+    free(caminhos);
 }
 
 void escreverSaidaTerminalMatrix(Node** arvoreMinima, Matrix* matrix)

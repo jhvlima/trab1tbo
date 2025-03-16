@@ -35,7 +35,7 @@ float nodeGetDistancia(Node* node)
     return node->distancia;
 }
 
-void nodeSetDistancia(Node* node, int distancia)
+void nodeSetDistancia(Node* node, float distancia)
 {
     node->distancia = distancia;
 }

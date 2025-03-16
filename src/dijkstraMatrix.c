@@ -1,23 +1,18 @@
 #include "dijkstraMatrix.h"
 #include <stdbool.h>
 
-bool less(float x, float y)
-{
-    if(y == -1){
-        return true;
-    }
-    if(x < y && !(x < 0)){
-        return true;
-    }
-    return false;
+bool less(float x, float y) {
+    if (y == -1) return true;  // y is infinity, so x is smaller
+    if (x == -1) return false; // x is infinity, so y is smaller
+    return x < y;
 }
 
 Node* extraiMin(float* distancias, Node** arvoreMin, int size)
 {
     int idMin = -1;
-    int value = -1;
+    float value = -1;
     for(int i = 0; i < size; i++){
-        if(!arvoreMin[i] && less(distancias[i], value)){
+        if (!arvoreMin[i] && (distancias[i] != -1 && less(distancias[i], value))) {
             idMin = i;
             value = distancias[i];
         }
@@ -34,17 +29,16 @@ void relaxarArestas(Matrix* matrix, float* distancias, int idPai, int* pais, Nod
 {
     float* adjacencias = matrixGetAdjacenciasId(matrix, idPai);
     for(int i = 0; i < matrixGetSize(matrix); i++){
-        if(arvoreMin[i] || adjacencias[i] < 0){
+        if(arvoreMin[i] || adjacencias[i] == -1){
             continue;
         }
         float distPai = distancias[idPai];
         float novaDist = distPai + adjacencias[i];
         //printf("%d -[%.2f]-> %d || %.2f < %.2f?\n", idPai, adjacencias[i], i, novaDist, distancias[i]);
-        if(distancias[i] < 0 || distancias[i] > novaDist){
+        if (distancias[i] == -1 || distancias[i] > novaDist) {
             //printf("TROCA\n");
             distancias[i] = novaDist;
             pais[i] = idPai;
-
         }
     }
 }
@@ -60,11 +54,12 @@ Node** dijkstraMatrix(Matrix* matrix)
     float* distancias = (float*) malloc (size * sizeof(float));
 
     for(int i = 0; i < size; i++){
-        pais[i] = i;
+        pais[i] = -1;
         distancias[i] = -1;
     }
 
     distancias[source] = 0;
+    pais[source] = source;
 
     for (int i = 0; i < size; i++){
         Node* min = extraiMin(distancias, arvoreMin, size);

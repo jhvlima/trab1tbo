@@ -2,8 +2,8 @@
 #include <stdbool.h>
 
 bool less(float x, float y) {
-    if (y == -1) return true;  // y is infinity, so x is smaller
-    if (x == -1) return false; // x is infinity, so y is smaller
+    if (y == -1) return true;  // y é infinito, logo x é menor
+    if (x == -1) return false; // x é infinito, logo y é menor
     return x < y;
 }
 

@@ -1,12 +1,11 @@
 #!/bin/bash
 
-# Para o script funcionar deve existir o diretório casos_teste_v3 com os arquivos de teste de entrada
-# Serão criados os arquivos de saída no diretório saidas/
+# Para o script funcionar deve existir o diretório $TEST_DIR com os arquivos de teste de entrada
+# Serão criados os arquivos de saída no diretório $OUTPUT_DIR
 # O script compila o código e executa os testes
+# O valgrind é opcional e se passado como argumento, o script executará o valgrind para cada teste
 # Uso: ./testador.sh {heap|matrix|both} [valgrind]
 # Exemplo: ./testador.sh heap valgrind
-# Pode escolher executar os testes com mainHeap, mainMatrix ou ambos
-# Pode escolher usar o valgrind
 
 # Variáveis
 TEST_DIR="casos_teste_v3"
@@ -14,6 +13,10 @@ OUTPUT_DIR="saidas"
 BIN="./trab1"
 VALGRIND="valgrind"
 NUM_RUNS=1  # Número de execuções para calcular a média
+
+# Prefixos dos arquivos de saída
+HEAP_PREFIX="saida_heap_"
+MATRIX_PREFIX="saida_matrix_"
 
 # Função para calcular a média dos tempos de execução
 calculate_average() {
@@ -29,13 +32,14 @@ calculate_average() {
 # Função para executar testes com trab1 (Heap)
 testHeap() {
     for test in $TEST_DIR/*.txt; do
-        output=$OUTPUT_DIR/saida_heap$(basename $test)
+        output=$OUTPUT_DIR/$HEAP_PREFIX$(basename $test)
         times=()
         for i in $(seq 1 $NUM_RUNS); do
             if [ "$USE_VALGRIND" == "true" ]; then
-                valgrind_output=$OUTPUT_DIR/valgrind_heap_$(basename $test .txt).log
+                valgrind_output="$OUTPUT_DIR/valgrind_${HEAP_PREFIX}$(basename $test .txt).log"
                 $VALGRIND --log-file=$valgrind_output $BIN $test $output
             else
+                echo "$BIN $test $output"
                 start_time=$(date +%s.%N)
                 $BIN $test $output
                 end_time=$(date +%s.%N)
@@ -54,13 +58,14 @@ testHeap() {
 # Função para executar testes com trab1 (Matrix)
 testMatrix() {
     for test in $TEST_DIR/*.txt; do
-        output=$OUTPUT_DIR/saida_matrix$(basename $test)
+        output=$OUTPUT_DIR/$MATRIX_PREFIX$(basename $test)
         times=()
         for i in $(seq 1 $NUM_RUNS); do
             if [ "$USE_VALGRIND" == "true" ]; then
-                valgrind_output=$OUTPUT_DIR/valgrind_matrix_$(basename $test .txt).log
+                valgrind_output="$OUTPUT_DIR/valgrind_${MATRIX_PREFIX}$(basename $test .txt).log"
                 $VALGRIND --log-file=$valgrind_output $BIN $test $output
             else
+                echo "$BIN $test $output"
                 start_time=$(date +%s.%N)
                 $BIN $test $output
                 end_time=$(date +%s.%N)
@@ -77,6 +82,7 @@ testMatrix() {
 }
 
 # Verifica os argumentos passados para o script
+mkdir -p $OUTPUT_DIR
 if [ "$1" == "heap" ]; then
     make heap
     if [ "$2" == "valgrind" ]; then
@@ -112,3 +118,4 @@ else
     echo "Uso: $0 {heap|matrix|both} [valgrind]"
     exit 1
 fi
+echo "Fim dos testes"

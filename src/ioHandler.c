@@ -1,5 +1,22 @@
 #include "ioHandler.h"
 #include "matrix.h"
+
+// Estrutura para armazenar o id do vertice e a distância deste até o vértice fonte
+// Poderia ser usado o struct Node, mas o pai não é necessário, portanto economizamos memória com uma struct menor
+typedef struct {
+    float distancia;
+    int idVertice;
+} Caminho;
+
+// Função de comparação para qsort (ordena da menor para a maior distância)
+int compararCaminhos(const void* a, const void* b) {
+    Caminho* caminhoA = (Caminho*)a;
+    Caminho* caminhoB = (Caminho*)b;
+    if (caminhoA->distancia < caminhoB->distancia) return -1;
+    if (caminhoA->distancia > caminhoB->distancia) return 1;
+    return 0;
+}
+
 /*
     @brief Le arquivo de entrada para contar o numero de vertices
     @param entrada Arquivo de entrada
@@ -219,21 +236,6 @@ void lerArquivoEntradaMatrixToken(FILE* entrada, Matrix* matrix)
 
     free(linha);
     //printf("Leitura finalizada!\n");
-}
-
-// Estrutura para armazenar caminho e distância
-typedef struct {
-    double distancia;
-    int idVertice;
-} Caminho;
-
-// Função de comparação para qsort (ordena da menor para a maior distância)
-int compararCaminhos(const void* a, const void* b) {
-    Caminho* caminhoA = (Caminho*)a;
-    Caminho* caminhoB = (Caminho*)b;
-    if (caminhoA->distancia < caminhoB->distancia) return -1;
-    if (caminhoA->distancia > caminhoB->distancia) return 1;
-    return 0;
 }
 
 void escreverArquivoSaidaGraph(FILE* saida, Node** arvoreMinima, Graph* graph)

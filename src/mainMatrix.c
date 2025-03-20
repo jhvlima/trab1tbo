@@ -14,14 +14,14 @@ int main(int argc, char *argv[])
     char *entradaPath = argv[1];
     char *saidaPath = argv[2];
 
-    struct timeval start, end;
-    gettimeofday(&start, NULL); //inicia contagem de tempo
+    // struct timeval start, end;
+    // gettimeofday(&start, NULL); //inicia contagem de tempo
 
     resolveComDijkstraMatrix(entradaPath, saidaPath);
 
-    gettimeofday(&end, NULL); // Marca o tempo final
-    float elapsed_time = (end.tv_sec - start.tv_sec) + (end.tv_usec - start.tv_usec) / 1000000.0;
-    printf("Tempo de execução (matrix) [%s]: %.6f segundos\n", entradaPath, elapsed_time);
+    // gettimeofday(&end, NULL); // Marca o tempo final
+    // float elapsed_time = (end.tv_sec - start.tv_sec) + (end.tv_usec - start.tv_usec) / 1000000.0;
+    // printf("Tempo de execução (matrix) [%s]: %.6f segundos\n", entradaPath, elapsed_time);
 
     return 0;
 }

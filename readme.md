@@ -106,7 +106,7 @@ Portanto, a escolha da estrutura de dados depende do tipo de grafo e dos requisi
 # **Mais detalhes sobre o repositório**
 
 Para fazer os teste e ver as diferenças na saída temos scripts para usar:
-*adicione os diretorios casos_teste_v3 e saidas conforme especificado na disposição do repositório abaixo
+   - Adicione os diretorios casos_teste_v3 e saidas conforme especificado na disposição do repositório
 
 ```bash
 ./testador both         # compila e executa cada implementacao gerando suas respectivas saidas
@@ -126,9 +126,8 @@ make matrix
 ./trab1 entrada.txt saida.txt
 ```
 
-*(o default para 'make' é a implementação com Heap)
 Exemplo de execução:
-
+   - obs: o default para 'make' é a implementação com Heap
 ```bash
 make
 ./trab1 casos_teste_v3/caso_teste_muito_pequeno_1.txt saidas/saida_caso_teste_muito_pequeno_1.txt

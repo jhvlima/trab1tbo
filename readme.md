@@ -1,6 +1,6 @@
 # Trabalho 1 - TBO
 
-Alunos: Daniel Corona de Aguiar e João Henrique Valbusa Lima
+Alunos: Daniel Corona de Aguiar (2023101578) e João Henrique Valbusa Lima (2023100583)
 
 ## Introdução
 
@@ -105,7 +105,8 @@ Portanto, a escolha da estrutura de dados depende do tipo de grafo e dos requisi
 
 # **Mais detalhes sobre o repositório**
 
-Para fazer os teste e ver as diferenças na saída temos scripts para usar
+Para fazer os teste e ver as diferenças na saída temos scripts para usar:
+*adicione os diretorios casos_teste_v3 e saidas conforme especificado na disposição do repositório abaixo
 
 ```bash
 ./testador both         # compila e executa cada implementacao gerando suas respectivas saidas
@@ -114,11 +115,20 @@ Para fazer os teste e ver as diferenças na saída temos scripts para usar
 ---
 Também é possível executar o programa manualmente com o seguinte padrão de execução
 ```bash
-make
+make heap
 ./trab1 entrada.txt saida.txt
 ```
 
-Exemplo de execução
+---
+Ou para a implementação com matriz:
+```bash
+make matrix
+./trab1 entrada.txt saida.txt
+```
+
+*(o default para 'make' é a implementação com Heap)
+Exemplo de execução:
+
 ```bash
 make
 ./trab1 casos_teste_v3/caso_teste_muito_pequeno_1.txt saidas/saida_caso_teste_muito_pequeno_1.txt

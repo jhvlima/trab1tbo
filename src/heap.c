@@ -1,3 +1,7 @@
+//Autoria:
+//Daniel Corona de Aguiar (2023101578)
+//João Henrique Valbusa Lima (2023100583)
+
 #include "heap.h"
 #include <stdio.h>
 #include <stdlib.h>
